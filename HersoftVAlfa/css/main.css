@@ -1,0 +1,63 @@
+:root{
+    --background: #121212;
+	--main_color: #00FFF5;
+	--secondary_color: #da1c45;
+	--white_op: rgb(246, 246, 246,0.7);
+	--blue_op: rgba(17, 32, 49, 0.8);
+}
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+}
+/*Font text*/
+@font-face {
+    font-family: 'Modern Sans';
+    src: url(../assets/font/font_text/ModernSans-Light.otf);
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(../assets/font/font_text/VictorMono-Bold.ttf);
+}
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+/*Menu*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    background: linear-gradient(374deg ,#121212,#121212, #121212,#da1c45);
+    width: 100vw;
+    border-bottom: 3px solid #da1c45;
+    box-shadow: 1px 1px 10px 1px #da1c45;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    margin-left: 5vw;
+}
+.logo img{
+    width: 100%;
+}
+#nav{
+    display: none;
+}
+.shortcuts{
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    margin-right: 6vh;
+}
+.shortcuts button{
+    background: none;
+    border: none;
+    margin-left: 1.6vw;
+    cursor: pointer;
+}
+i{
+    font-size: 1.6rem;
+    color: white;
+}
