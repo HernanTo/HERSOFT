@@ -11,6 +11,16 @@ body{
     padding: 0;
     background-color: var(--background);
 }
+/*Scrool*/
+::-webkit-scrollbar{
+    width: 5px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(30deg,#da1c45,#00FFF5);
+    border-radius: 10px;
+    height: 50vh;
+}
 /*Font text*/
 @font-face {
     font-family: 'Modern Sans';
@@ -33,6 +43,8 @@ header{
     width: 100vw;
     border-bottom: 3px solid #da1c45;
     box-shadow: 1px 1px 10px 1px #da1c45;
+    position: sticky;
+    top: 0;
 }
 .logo{
     width: 80px;
@@ -42,14 +54,13 @@ header{
 .logo img{
     width: 100%;
 }
-#nav{
-    display: none;
-}
 .shortcuts{
     display: flex;
     align-content: center;
     justify-content: end;
     margin-right: 6vh;
+    z-index: 2;
+    /* position: absolute; */
 }
 .shortcuts button{
     background: none;
@@ -57,7 +68,135 @@ header{
     margin-left: 1.6vw;
     cursor: pointer;
 }
+.cross_search, .cross_car, .cross_user,.cross_menu{
+    font-size: 0px;
+    transition-property: font-size;
+    transition-duration: 0.5s;
+}
 i{
     font-size: 1.6rem;
     color: white;
+}
+.sign_in{
+    display: none;
+}
+#nav{
+    position: absolute;
+    z-index: 1;
+    background: var(--blue_op);
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+#nav #menu{
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    /* background: green; */
+    width: 28vw;
+    margin-left: 34vw;
+    margin-top: 12vh;
+}
+#menu a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#menu a li{
+    background: transparent;
+    margin-bottom: 5vh;
+    padding: 10px;
+    width: 0px;
+    border-radius: 10px;
+    transition-property: background,width,clip-path;
+    transition-duration: 0.8s;
+    /* background: red; */
+}
+#menu a:hover li{
+    background: red;
+    width: 111%;
+}
+.nav_btn{
+    padding: 0;
+    /* background: green; */
+    width: 28vw;
+    margin-left: 34vw;
+    margin-top: 3vh;
+}
+.sign_in_btn, .login_up_btn{
+    background: transparent;
+    margin-bottom: 5vh;
+    padding: 10px;
+    width: 0px;
+    border-radius: 10px;
+    transition-property: background,width,clip-path;
+    transition-duration: 0.8s;
+    color: white;
+    border: none;
+    font-family: 'Victor Mono';
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.sign_in_btn:hover, .login_up_btn:hover{
+    background: red;
+    width: 111%;
+    border: 2px solid white;
+}
+.login_up{
+    background: var(--background);
+    position: absolute;
+    top: 15vh;
+    position: sticky;
+    z-index: 1;
+    width: 60vw;
+    padding: 5vw;
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    color: white;
+    box-shadow: 2px 2px 12px px #da1c45;
+    margin-left: 14vw;
+    border-radius: 10px;
+    border: 1px solid #00FFF5;
+    /* display: none; */
+    transition-property: display;
+    transition: 1.2s;
+}
+.login_up h2{
+    color: var(--main_color);
+    font-family: 'Victor Mono';
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.login_up label{
+    font-size: 1.1rem;
+}
+.login_up input{
+    margin-bottom: 7vh;
+    margin-top: 2vh;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #da1c45;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Victor Mono';
+    outline: none;
+}
+#btn_login_in{
+    margin-bottom: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: background;
+    transition-duration: 0.5s;
+}
+#btn_login_in:hover{
+    background: red;
+}
+.banner,.container{
+    filter: blur(1rem);
 }
