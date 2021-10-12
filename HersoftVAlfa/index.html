@@ -27,9 +27,9 @@
                 <i class="fi-sr-user"></i>
                 <i class="fi-sr-cross-circle cross_user"></i>
             </button>
-            <button class="shortcut_btn">
-                <i class="fi-sr-menu-burger"></i>
-                <i class="fi-sr-cross-circle cross_menu"></i>
+            <button class="shortcut_btn" onclick="openCloseMenu()">
+                <i class="fi-sr-menu-burger menu_burger" id="menu_burger"></i>
+                <i class="fi-sr-cross-circle cross_menu" id="cross_menu"></i>
             </button>
         </div>
         <nav id="nav">
@@ -46,32 +46,12 @@
             </div>
         </nav>
     </header>
-    <div class="login_up">
-        <h2>Iniciar Sesión</h2>
-        <form action="validate.php" method="POST">
-            <label>Ingrese su correo electronico</label><input type="email" name="email_input_login" id="email_input_check" placeholder="email@dominio.com" required><br>
-            <label>Ingrese una contraseña</label><input type="password" name="password_input_login" id="password_input_check" placeholder="password" required><br>
-            <p><a href="#">¿Olvido su contraseña?</a></p>
-            <p><a href="#">¿No tiene cuenta? Registrese</a></p>
-            <input type="submit" value="Continuar" id="btn_login_in">
-        </form>
-    </div>
-    <div class="sign_in">
-        <h2>Crear una cuenta </h2>
-        <form action="checkIn.php" method="POST">
-            <label>Ingrese su nombre completo</label><input type="text" name="name_input_check" id="name_input_chek" placeholder="Nombre Completo" required><br>
-            <label>Ingrese su edad</label><input type="number" name="years_input_check" id="years_input_check" required><br>
-            <!-- <label>Ingrese su Genero</label><br>
-            <label>Hombre</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>Mujer</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>No Binario</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><br> -->
-            <label>Ingrese su direccion</label><input type="text" name="adress_input_check" id="adress_input_check" placeholder="KRA 120B 49A-32" required><br>
-            <label>Ingrese su número telefonico</label><input type="tel" name="numberTel_input_check" id="numberTel_input_check" placeholder="3145960234"><br>
-            <label>Ingrese su correo electronico</label><input type="email" name="email_input_check" id="email_input_check" placeholder="email@dominio.com" required><br>
-            <label>Ingrese una contraseña</label><input type="password" name="password_input_check" id="password_input_check" required><br>
-            <input type="submit" value="Continuar" id="btn_sign_in">
-        </form>
-    </div>
     <div class="banner">
-        <h1>Crea<span>ctly</span></h1>
+        <div>
+            <span class="name_banner">
+                <h1>Crea<span>ctly</span></h1>
+            </span>
+        </div>
         <figure class="img_banner">
             <img src="assets/img/Logo.gif" alt="logo Creactly">
         </figure>
@@ -297,5 +277,6 @@
             </a>
         </div>
     </div>
+    <script src="./src/JS/main.js"></script>
 </body>
 </html>

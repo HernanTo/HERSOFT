@@ -1,0 +1,136 @@
+/*Sign in  and login up*/
+.sign_in_btn, .login_up_btn{
+    background: transparent;
+    margin-bottom: 5vh;
+    padding: 10px;
+    width: 0px;
+    border-radius: 10px;
+    transition-property: background,width,clip-path;
+    transition-duration: 0.8s;
+    color: white;
+    border: none;
+    font-family: 'Victor Mono';
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.sign_in_btn:hover, .login_up_btn:hover{
+    background: red;
+    width: 111%;
+    border: 2px solid white;
+}
+.login_up{
+    background: var(--background);
+    position: absolute;
+    position: sticky;
+    top: 19vh;
+    z-index: 1;
+    width: 70vw;
+    height: 62vh;
+    padding: 5vw;
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    color: white;
+    margin-left: 10vw;
+    border-radius: 10px;
+    border: 1px solid #00FFF5;
+    display: none;
+    transition-property: display;
+    transition-duration: 1.2s;
+}
+.login_up h2{
+    color: var(--main_color);
+    font-family: 'Victor Mono';
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.login_up label, .sign_in > label{
+    font-size: 1.1rem;
+}
+.login_up input,  .sign_in input{
+    margin-bottom: 7vh;
+    margin-top: 2vh;
+    background: none;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #da1c45;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    width: 80%;
+    font-family: 'Victor Mono';
+    outline: none;
+}
+#btn_login_in , #btn_sign_in{
+    margin-bottom: 0;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: background;
+    transition-duration: 0.5s;
+    margin-left: 10%;
+    border-top: 2px solid var(--secondary_color);
+}
+#btn_login_in:hover , #btn_sign_in:hover{
+    background: red;
+}
+/* .banner,.container{
+    filter: blur(1rem);
+} */
+form a{
+    text-decoration: none;
+    color: var(--secondary_color);
+}
+.sign_in{
+    position: absolute;
+    z-index: 2;
+    position: sticky;
+    background: white;
+    width: 70vw;
+    padding: 5vw;
+    height: 70vh;
+    margin-left: 10vw;
+    top: 15vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    transition-property: display;
+    transition-duration: 1.2s;
+    border: 3px solid  var(--secondary_color);
+    overflow-y: scroll;
+    color: white;
+}
+.sign_in h2{
+    color: var(--secondary_color);
+    font-family: 'Victor Mono';
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.sign_in{
+    display: none;
+}
+////////////////html
+<div class="login_up">
+        <h2>Iniciar Sesión</h2>
+        <form action="validate.php" method="POST">
+            <label>Ingrese su correo electronico</label><input type="email" name="email_input_login" id="email_input_check" placeholder="email@dominio.com" required><br>
+            <label>Ingrese una contraseña</label><input type="password" name="password_input_login" id="password_input_check" placeholder="password" required><br>
+            <p><a href="#">¿Olvido su contraseña?</a></p>
+            <p><a href="#">¿No tiene cuenta? Registrese</a></p>
+            <input type="submit" value="Continuar" id="btn_login_in">
+        </form>
+    </div>
+    <div class="sign_in">
+        <h2>Crear una cuenta </h2>
+        <form action="checkIn.php" method="POST">
+            <label>Ingrese su nombre completo</label><input type="text" name="name_input_check" id="name_input_chek" placeholder="Nombre Completo" required><br>
+            <label>Ingrese su edad</label><input type="number" name="years_input_check" id="years_input_check" required><br>
+            <!-- <label>Ingrese su Genero</label><br>
+            <label>Hombre</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>Mujer</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>No Binario</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><br> -->
+            <label>Ingrese su direccion</label><input type="text" name="adress_input_check" id="adress_input_check" placeholder="KRA 120B 49A-32" required><br>
+            <label>Ingrese su número telefonico</label><input type="tel" name="numberTel_input_check" id="numberTel_input_check" placeholder="3145960234"><br>
+            <label>Ingrese su correo electronico</label><input type="email" name="email_input_check" id="email_input_check" placeholder="email@dominio.com" required><br>
+            <label>Ingrese una contraseña</label><input type="password" name="password_input_check" id="password_input_check" required><br>
+            <input type="submit" value="Continuar" id="btn_sign_in">
+        </form>
+    </div>
