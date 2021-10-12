@@ -1,0 +1,84 @@
+:root{
+    --background: #121212;
+	--main_color: #00FFF5;
+	--secondary_color: #da1c45;
+	--white_op: rgb(246, 246, 246,0.7);
+	--blue_op: rgba(17, 32, 49, 0.8);
+}
+@font-face {
+    font-family: 'Modern Sans';
+    src: url(../assets/font/font_text/ModernSans-Light.otf);
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(../assets/font/font_text/VictorMono-Bold.ttf);
+}
+#form{
+    background-color: var(--blue_op);
+    padding: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-family: 'Modern Sans';
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    width: 320px;
+
+}
+form label{
+    width: 75px;
+	display:inline-block;
+}
+
+#nameuser, #email{
+    width:100%;
+    outline: var(--background);
+    background-color: var(--background);
+    display: inline-block;
+    height: 40px;
+    border-radius: 10px;
+    border-bottom: solid var(--main_color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#coments{
+    width: 100%;
+	height:100px;
+	border-radius:3px;
+	background-color:var(--background);			
+	margin:8px 0;
+	display:block;
+    border-radius: 10px;
+    border-bottom: solid var(--main_color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#form #send{
+    padding: 5px;
+	width: 30%;
+	margin-top:32px;
+	border-radius:5px;
+    margin-left: 230px;
+    font-family: 'Victor Mono';
+    border: solid var(--secondary_color);
+    font-weight:bold;
+	color:var(--background);
+	background-color: var(--secondary_color);
+} 
+
+h1{
+    text-align: center;
+    border-radius: 10px;
+    color: var(--main_color);
+    width: 250px;
+    margin-left: 130px;
+    font-family: 'Victor Mono';
+    font-size: 40px;
+}
+::placeholder{
+    text-align: center;
+    font-family: 'Modern Sans';
+    font-size: 15px;
+}
