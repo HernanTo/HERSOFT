@@ -1,0 +1,115 @@
+.banner h1{
+    color: white;
+    font-family: 'Victor Mono';
+    font-size: 3rem;
+    text-align: center;
+}
+.banner h1 span{
+    color: var(--main_color);
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.banner h1:hover span{
+    color: var(--secondary_color);
+}
+.banner img{
+    display: none;
+}
+.container h2{
+    color: var(--secondary_color);
+    font-family: 'Victor Mono';
+    margin-left: 12vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 2rem;
+}
+.products{
+    display: grid;
+    grid-template-columns: 200px;
+    gap: 30px;
+    justify-content: center;
+}
+.containerProducts{
+    position: relative;
+    background: var(--blue_op);
+    color: red;
+    backdrop-filter: blur(10rem);
+    border-top: 5px solid var(--blue_op);
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.6s;
+    text-decoration: none;
+}
+.containerProducts img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.containerProducts h3{
+    text-align: center;
+    font-family: 'Modern Sans';
+    color: white;
+}
+.containerProducts:hover{
+    transform: scale(1.06);
+}
+.add_car_btn{
+    background: var(--secondary_color);
+    border: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.add_car_btn i{
+    color: black;
+}
+.add_car_btn b{
+    margin-top: 8px;
+    margin-left: 8px;
+    font-family: 'Victor Mono';
+}
+@media (min-width:700px){
+    .products{
+        grid-template-columns: repeat(2,200px);
+    }
+}
+@media (min-width:1000px) {
+    .products{
+        grid-template-columns: repeat(3,200px);
+    }
+    .banner{
+        display: grid;
+        grid-template-columns: 45vw 500px;
+        gap: 5vw;
+        align-items: center;
+        /* background: blue; */
+    }
+    .name_banner h1{
+        font-size: 540%;
+        margin-left: 17vw;
+        cursor: pointer;
+    }
+    .banner .img_banner img{
+        display: block;
+    }
+    .img_banner img{
+        width: 100%;
+    }
+}
+@media (min-width:1200px){
+    .products{
+        grid-template-columns: repeat(4,200px);
+        gap: 60px;
+    }
+    .name_banner h1{
+        font-size: 620%;
+        margin-left: 17vw;
+    }
+}
