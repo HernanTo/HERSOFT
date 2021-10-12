@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: var(--background);
+    position: relative;
 }
 /*Scrool*/
 ::-webkit-scrollbar{
@@ -44,6 +45,7 @@ header{
     border-bottom: 3px solid #da1c45;
     box-shadow: 1px 1px 10px 1px #da1c45;
     position: sticky;
+    z-index: 1;
     top: 0;
 }
 .logo{
@@ -53,6 +55,7 @@ header{
 }
 .logo img{
     width: 100%;
+    display: block;
 }
 .shortcuts{
     display: flex;
@@ -148,21 +151,21 @@ i{
 .login_up{
     background: var(--background);
     position: absolute;
-    top: 15vh;
     position: sticky;
+    top: 19vh;
     z-index: 1;
-    width: 60vw;
+    width: 70vw;
+    height: 62vh;
     padding: 5vw;
     font-family: 'Modern Sans';
     font-weight: bold;
     color: white;
-    box-shadow: 2px 2px 12px px #da1c45;
-    margin-left: 14vw;
+    margin-left: 10vw;
     border-radius: 10px;
     border: 1px solid #00FFF5;
-    /* display: none; */
+    display: none;
     transition-property: display;
-    transition: 1.2s;
+    transition-duration: 1.2s;
 }
 .login_up h2{
     color: var(--main_color);
@@ -170,10 +173,10 @@ i{
     text-align: center;
     padding-bottom: 2vh;
 }
-.login_up label{
+.login_up label, .sign_in > label{
     font-size: 1.1rem;
 }
-.login_up input{
+.login_up input,  .sign_in input{
     margin-bottom: 7vh;
     margin-top: 2vh;
     background: none;
@@ -183,20 +186,144 @@ i{
     border-bottom-right-radius: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
+    width: 80%;
     font-family: 'Victor Mono';
     outline: none;
 }
-#btn_login_in{
+#btn_login_in , #btn_sign_in{
     margin-bottom: 0;
     cursor: pointer;
     padding: 10px;
     border-radius: 10px;
     transition-property: background;
     transition-duration: 0.5s;
+    margin-left: 10%;
+    border-top: 2px solid var(--secondary_color);
 }
-#btn_login_in:hover{
+#btn_login_in:hover , #btn_sign_in:hover{
     background: red;
 }
-.banner,.container{
+/* .banner,.container{
     filter: blur(1rem);
+} */
+form a{
+    text-decoration: none;
+    color: var(--secondary_color);
+}
+.sign_in{
+    position: absolute;
+    z-index: 2;
+    position: sticky;
+    background: white;
+    width: 70vw;
+    padding: 5vw;
+    height: 70vh;
+    margin-left: 10vw;
+    top: 15vh;
+    border-radius: 10px;
+    background-color: var(--background);
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    transition-property: display;
+    transition-duration: 1.2s;
+    border: 3px solid  var(--secondary_color);
+    overflow-y: scroll;
+    color: white;
+}
+.sign_in h2{
+    color: var(--secondary_color);
+    font-family: 'Victor Mono';
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.banner h1{
+    color: white;
+    font-family: 'Victor Mono';
+    font-size: 3rem;
+    text-align: center;
+}
+.banner h1 span{
+    color: var(--main_color);
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+.banner h1:hover span{
+    color: var(--secondary_color);
+}
+.banner img{
+    display: none;
+}
+.container h2{
+    color: var(--secondary_color);
+    font-family: 'Victor Mono';
+}
+.products{
+    display: grid;
+    grid-template-columns: 200px;
+    gap: 30px;
+    justify-content: center;
+}
+.containerProducts{
+    position: relative;
+    background: var(--blue_op);
+    color: red;
+    backdrop-filter: blur(10rem);
+    border-top: 1px solid rgba(255, 255,255, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    transition: 0.6s;
+    text-decoration: none;
+}
+.containerProducts img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.containerProducts h3{
+    text-align: center;
+    font-family: 'Modern Sans';
+    color: white;
+}
+.containerProducts:hover{
+    transform: scale(1.06);
+}
+.add_car_btn{
+    background: var(--secondary_color);
+    border: 0px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    height: 40px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.add_car_btn i{
+    color: black;
+}
+.add_car_btn b{
+    margin-top: 8px;
+    margin-left: 8px;
+    font-family: 'Victor Mono';
+}
+@media (min-width:700px){
+    .products{
+        grid-template-columns: repeat(2,200px);
+    }
+}
+@media (min-width:1000px) {
+    .products{
+        grid-template-columns: repeat(3,200px);
+    }
+}
+@media (min-width:1200px){
+    .products{
+        grid-template-columns: repeat(4,200px);
+        /* grid-template-rows: 270px; */
+        gap: 60px;
+    }
+    
 }
