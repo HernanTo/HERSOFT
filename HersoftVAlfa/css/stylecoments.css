@@ -14,15 +14,17 @@
     src: url(../assets/font/font_text/VictorMono-Bold.ttf);
 }
 #form{
-    background-color: var(--blue_op);
-    padding: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    background: rgb(18,18,18);
+    background: linear-gradient(210deg, rgba(17,32,49,0.8) 0%, rgba(218,28,69,1) 100%);
+    padding: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
     font-family: 'Modern Sans';
     border-radius: 10px;
     color: white;
     display: inline-block;
     width: 320px;
+    margin-top: 30px;
 
 }
 form label{
@@ -64,21 +66,26 @@ form label{
     font-family: 'Victor Mono';
     border: solid var(--secondary_color);
     font-weight:bold;
-	color:var(--background);
-	background-color: var(--secondary_color);
+	color: #ffff;
+	background-color: var(--blue_op);
 } 
 
-h1{
+#form h1{
+    margin-top: 10px;
     text-align: center;
-    border-radius: 10px;
     color: var(--main_color);
-    width: 250px;
-    margin-left: 130px;
     font-family: 'Victor Mono';
     font-size: 40px;
 }
+
 ::placeholder{
     text-align: center;
     font-family: 'Modern Sans';
     font-size: 15px;
+}
+@media (min-width:1000px) {
+    
+}
+@media (min-width:1200px){
+
 }
