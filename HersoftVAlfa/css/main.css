@@ -32,10 +32,10 @@ body{
     font-family: 'Victor Mono';
     src: url(../assets/font/font_text/VictorMono-Bold.ttf);
 }
-/* @font-face {
-    font-family: ;
-    src: url();
-} */
+@font-face {
+    font-family: 'Monospace';
+    src: url(../assets/font/font_text/MonospaceTypewriter.ttf);
+}
 /*Menu*/
 header{
     display: grid;
@@ -80,8 +80,11 @@ header{
 i{
     font-size: 1.6rem;
     color: white;
+    transition: 0.6s;
 }
-
+i:hover{
+    font-size: 1.7rem;
+}
 #nav{
     position: absolute;
     z-index: 1;

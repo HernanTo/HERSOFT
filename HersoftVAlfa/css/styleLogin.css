@@ -1,0 +1,118 @@
+:root{
+    --background: #121212;
+	--main_color: #00FFF5;
+	--secondary_color: #da1c45;
+	--white_op: rgb(246, 246, 246,0.7);
+	--blue_op: rgba(17, 32, 49, 0.8);
+}
+
+body{
+    background: linear-gradient(83deg, #121212 0%, #da1c45 35%, #00FFF5 100%);
+}
+header{
+    /* border-bottom: 3px solid var(--main_color);
+    box-shadow: 1px 1px 10px 1px var(--main_color); */
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+header i{
+    color: black;
+}
+.contenedor_main_login{
+    /* display: flex; */
+    /* justify-content: center; */
+    height: 88.6vh;
+    background: linear-gradient(83deg, #121212 0%, #da1c45 35%, #00FFF5 100%);
+    /* background: green; */
+    filter: blur(15px);
+}
+.contenedor_login{
+    position: absolute;
+    height: 65vh;
+    width: 35vw;
+    left: 32.5%;
+    background: rgba(231, 126, 126, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
+    top: 16.25vh;
+    border-radius: 10px;
+    transition: 1s;
+}
+.contenedor_login:hover{
+    transform: scale(1.04);
+}
+.contenedor_login h2{
+    color: black;
+    font-family: 'Victor Mono';
+    text-align: center;
+    margin-top: 80px;
+}
+#form_login{
+    font-family: 'Modern Sans';
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 40px;
+
+}
+#email_login{
+    margin-bottom: 45px;
+}
+#email_login, #password_login{
+    background: red;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    color: black;
+    outline: none;
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    padding: 3px;
+    border-bottom: 3px solid black;
+    font-size: 1rem;
+}
+#email_login::placeholder, #password_login::placeholder{
+    color: black;
+    font-family: 'Monospace';
+}
+a{
+    text-decoration: none;
+    color: var(--main_color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#form_login a:hover{
+    text-decoration: underline;
+}
+#container_end_login{
+    display: flex;
+    margin-top: 70px;
+}
+#container_end_login a, #container_end_login button{
+    width: 100%;
+    font-family: 'Monospace';
+    padding: 5px;
+    margin-left: 4.6%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.8s;
+}
+#container_end_login button:hover, #container_end_login a:hover{
+    transform: scale(1.1);
+    text-decoration: none;
+}
+/* .container_loaged{
+    width: 45vw;
+    background: #121212;
+    backface-visibility: ;
+    position: absolute;
+    top: 35vh;
+    left: 27.5%;
+    height: 30vh;
+    border-radius: 10px;
+    color: white;
+} */

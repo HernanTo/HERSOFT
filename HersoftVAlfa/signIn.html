@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a la página oficial de Creactly, ven y échale un vistazo a lo que tenemos, o en su defecto vende tus productos acá">
+    <meta name="keyword" content="Productos Biodegradables,Vender,Comprar,Biodegradable">
+    <title>Creactly</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styleSignIn.css">
+    <link rel="shortcut icon" href="assets/img/Logo.gif" type="image/x-icon">
+    <link rel="stylesheet" href="assets/font/icons/css/uicons-solid-rounded.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/Logo.gif" alt="logo Creactly"></a>
+        </div>
+        <!-- <h1 class="logo-text">Crea<span>ctly</span></h1> -->
+        <div class="shortcuts">
+            <button class="shortcut_btn">
+                <i class="fi-sr-shopping-cart"></i>
+                <i class="fi-sr-cross-circle cross_car"></i>
+            </button>
+            <button class="shortcut_btn">
+                <i class="fi-sr-user"></i>
+                <i class="fi-sr-cross-circle cross_user"></i>
+            </button>
+            <button class="shortcut_btn" onclick="openCloseMenu()">
+                <i class="fi-sr-menu-burger menu_burger" id="menu_burger"></i>
+                <i class="fi-sr-cross-circle cross_menu" id="cross_menu"></i>
+            </button>
+        </div>
+        <nav id="nav">
+            <ul id="menu">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="categories.html"><li>Categorias</li></a>
+                <a href="FAQ"><li>FAQ</li></a>
+                <a href="contactUs.html"><li>Contactanos</li></a>
+            </ul>
+            <div class="nav_btn">
+                <button class="sign_in_btn">Registrate</button>
+                <br>
+                <button class="login_up_btn">Iniciar Sesión</button>
+            </div>
+        </nav>
+    </header>
+    <div class="grid_sign_in">
+        <section id="left">
+            <form action="checkIn.php" method="POST">
+                <h2>Crear cuenta</h2>
+                <label>Ingrese su nombre completo</label>
+                <br>
+                <input type="text" name="name_input_check" id="name_input_chek" placeholder="Nombre Completo" required><br>
+                <label>Ingrese su edad</label>
+                <br>
+                <input type="number" name="years_input_check" id="years_input_check" required><br>
+                <!-- <label>Ingrese su Genero</label><br>
+                <label>Hombre</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>Mujer</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><label>No Binario</label><input type="checkbox" name="genre_input_check" id="genre_input_check"><br> -->
+                <label>Ingrese su direccion</label>
+                <br>
+                <input type="text" name="adress_input_check" id="adress_input_check" placeholder="KRA 120B 49A-32" required>
+                <br>
+                <br>
+                <label>Ingrese su número telefonico</label>
+                <br>
+                <input type="tel" name="numberTel_input_check" id="numberTel_input_check" placeholder="3145960234"><br>
+                <label>Ingrese su correo electronico</label>
+                <br>
+                <input type="email" name="email_input_check" id="email_input_check" placeholder="email@dominio.com" required><br>
+                <label>Ingrese una contraseña</label>
+                <br>
+                <input type="password" name="password_input_check" id="password_input_check" required><br>
+                <input type="submit" value="Continuar" id="btn_sign_in">
+            </form>
+        </section>
+        <section id="right">
+            
+        </section>
+    </div>
+    <script src="./src/JS/main.js"></script>
+</body>
+</html>
