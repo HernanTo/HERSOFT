@@ -130,6 +130,85 @@ i:hover{
     margin-left: 34vw;
     margin-top: 3vh;
 }
+/* ** Footer*/
+footer{
+    background: linear-gradient(-374deg ,#121212,#121212, #121212,
+#da1c45);
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: repeat(1,70%);
+    grid-template-rows: repeat(auto);
+    color: white;
+    border-top: 3px solid var(--secondary_color);
+    width: 100vw;
+    padding: 50px;
+}
+.aboutUs_index_index{
+    /* background: red; */
+    text-align: justify;
+}
+footer h2{
+    font-family: 'Monospace';
+}
+.aboutUs_index_index p{
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    font-size: 1.07rem;
+    padding-left: 20px;
+}
+.Social_bar{
+    display: grid;
+    grid-template-columns: repeat(6,50px);
+    grid-template-rows: 45px;
+    gap: 10px;
+    padding-left: 20px;
+}
+.Social_bar a{
+    background: white;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.Social_bar a:hover{
+    transform: scale(1.07);
+}
+.quick{
+    padding-left: 20px;
+    font-size: 1.07rem;
+    font-family: 'Modern Sans';
+}
+.quick a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    transition: 0.7s;
+}
+.quick a:hover{
+    color: var(--secondary_color);
+    text-decoration: underline;
+}
+.text_contact_index{
+    padding-left: 20px;
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    gap: 20px;
+}
+.text_contact_index i{
+    width: 7%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.text_contact_index p{
+    width: 85%;
+    margin: 0;
+    align-self: center;
+}
 @media (min-width:1000px){
     #nav{
         width: 30vw;
@@ -173,5 +252,14 @@ i:hover{
         font-weight: bold;
         font-size: 1.5rem;
         margin-left: 29.5%;
+    }
+    /* **footer */
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3,0.7fr);
+        padding-bottom: 15vh;
+    }
+    .aboutUs_index_index{
+        width: 75%;
     }
 }
