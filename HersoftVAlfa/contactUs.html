@@ -45,19 +45,39 @@
             </div>
         </nav>
     </header>
-    <div id="form">
+
+    <div class="conteiner">
+<!--Conetendor del formulario -->
+
+    <div class="container_form"> <!--Contenedor del formulario completo-->
+
         <h1>Sugerencias</h1>
+
         <form action="">
+        <div class="field_conteiner"> <!--Contenedor de los campos de respuesta del formlario-->
+            <div class="name_user">
+                <input type="text" name="nameuser" placeholder="Ingrese su nombre de usuario" id="nameuser">
+            </div>
 
-            <input type="text" name="nameuser" placeholder="Ingrese su nombre de usuario" id="nameuser"><br><br>
-            <input type="email" name="email" placeholder="Ingrese su correo electrónico" id="email"><br><br>
-            <input type="text" name="coments" placeholder="Ingrese su comentario" id="coments">
+            <div class="e-mail">
+                <input type="email" name="email" placeholder="Ingrese su correo electrónico" id="email">
+            </div>
+            <div class="coments">
+                <textarea name="coments" id="suggestion" placeholder="Ingrese su comentario"></textarea>
+            </div>
+        </div>
+            <input type="submit" name="enviar" id="send"maxlength="300"><br><br>
 
-            <input type="submit" name="enviar" id="send"maxlength="300"><br>
-            <br>
         </form>
-    </div>
 
+        </div>
+        <div class="info">
+            <h1>Más información</h1>
+            <p>hersoft@gmail.com</p>
+            <p>311-3568956</p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nemo voluptates laborum nostrum quod harum dignissimos, sequi, facere eum possimus soluta! Architecto facilis eveniet doloremque quibusdam neque, enim culpa sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis, sint consequuntur nulla nobis nemo, ducimus numquam dicta, sequi beatae ipsa quam odio asperiores amet neque hic quibusdam autem sit?
+        </div>
+    </div>
     <script src="./src/JS/main.js"></script>
 </body>
 </html>
