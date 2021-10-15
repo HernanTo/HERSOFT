@@ -7,15 +7,30 @@ var bannerName = document.getElementById('span_name');
 // 0 or 1
 var menuOnOrOff = false;
 function openCloseMenu() {
-  if (menuOnOrOff === false) {
-    menu.style.right = "0px";
-    menuBurger.style = "font-size: 0px";
-    crossMenu.style = "font-size: 1.6rem";
-    menuOnOrOff = true;
-  } else if (menuOnOrOff === true) {
-    menu.style.right = "-150%";
-    menuOnOrOff = false;
-    menuBurger.style = "font-size: 1.6rem";
-    crossMenu.style = "font-size: 0px";
+  let widthScreen = parseInt(screen.width);
+  if(widthScreen >= 1000){
+    if (menuOnOrOff === false) {
+      menu.style.right = "0px";
+      menuBurger.style = "font-size: 0px";
+      crossMenu.style = "font-size: 1.6rem";
+      menuOnOrOff = true;
+    } else if (menuOnOrOff === true) {
+      menu.style.right = "-150%";
+      menuOnOrOff = false;
+      menuBurger.style = "font-size: 1.6rem";
+      crossMenu.style = "font-size: 0px";
+    }
+  }else if(widthScreen < 1000){
+    if (menuOnOrOff === false) {
+      menu.style.left = "0px";
+      menuBurger.style = "font-size: 0px";
+      crossMenu.style = "font-size: 1.6rem";
+      menuOnOrOff = true;
+    } else if (menuOnOrOff === true) {
+      menu.style.left = "-150%";
+      menuOnOrOff = false;
+      menuBurger.style = "font-size: 1.6rem";
+      crossMenu.style = "font-size: 0px";
+    }
   }
 }
