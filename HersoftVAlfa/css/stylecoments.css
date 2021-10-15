@@ -204,22 +204,23 @@ form label{
 @media (min-width:1200px){
     .conteiner{
         margin-top: 30px;
-        margin-left: 10vh;
-        margin-right: 10vh;
+        margin-left: 15%;
+        margin-right:15%;
         display: grid;
-        grid-template-columns:  auto auto;
+        grid-template-columns:  110vh 30vh;
         grid-auto-rows: auto;
         border-radius: 10px;
     }
     .info{
+        background:linear-gradient(290deg, rgba(17,32,49,0.1) 0%, rgba(17,32,49,0.9) 100%);
         box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
         display: block;
         grid-column: 2 / 3;
-        color:#fff
+        color:#fff;
+        border-radius: 10px;
 
     }
     .container_form{
-        background-color: transparent;
         padding: 40px;
         font-family: 'Modern Sans';
         color: white;
