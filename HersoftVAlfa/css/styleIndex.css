@@ -113,3 +113,7 @@
         margin-left: 17vw;
     }
 }
+header h1{
+    transform: translate(0px,-70vh);
+    transition: 0.8s;
+}

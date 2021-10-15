@@ -2,6 +2,8 @@
 var menu = document.getElementById("nav");
 var menuBurger = document.getElementById("menu_burger");
 var crossMenu = document.getElementById("cross_menu");
+var banner = document.getElementsByClassName('banner');
+var bannerName = document.getElementById('span_name');
 // 0 or 1
 var menuOnOrOff = false;
 function openCloseMenu() {
