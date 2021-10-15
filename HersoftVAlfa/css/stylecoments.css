@@ -60,6 +60,7 @@ form label{
     border-top: none;
     border-left: none;
     border-right: none;
+    color: white;
 }
 .e-mail{
     margin-top: 20px;
@@ -93,6 +94,7 @@ form label{
     font-family: 'Modern Sans';
     font-size: 15px;
 }
+<<<<<<< HEAD
 
 /*Estilos tablet*/
 @media (min-width:1000px) {
@@ -186,6 +188,9 @@ form label{
         font-family: 'Victor Mono';
         font-size: 50px;
     }
+=======
+/* @media (min-width:1000px) {
+>>>>>>> 4fa976a96c2f83a500abfbca114ac2f5c71dd567
     
     ::placeholder{
         text-align: center;
@@ -232,6 +237,7 @@ form label{
         width: 100%;
 
 
+<<<<<<< HEAD
     }
 
     #suggestion{
@@ -311,3 +317,6 @@ form label{
         grid-column: 1 / span 1;
     }
 }
+=======
+} */
+>>>>>>> 4fa976a96c2f83a500abfbca114ac2f5c71dd567
