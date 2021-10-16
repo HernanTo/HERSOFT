@@ -18,9 +18,8 @@
     src: url(../assets/font/font_text/MonospaceTypewriter.ttf);
 }
 .container{
-    box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vw;
@@ -75,6 +74,7 @@
     
 }
 .info_container{
+    background-color: #151515;
     display: none;
     color: var(--white_op);
 }
@@ -134,7 +134,7 @@
     }
     .container{
         display: grid;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 85% 15%;
     }
     .fields_container{
         display: grid;
@@ -162,6 +162,15 @@
     }
     #send{
         margin-left: 72%;
+    }
+    .fields_container #nickname, #fullname, #phonenumber, #email, #suggestion{
+        width: 25vw;
+    }
+    #suggestion{
+        width: 60.5vw;
+    }
+    .container_form h1{
+        font-size:  30px;
     }
 }
 @media(min-width:1200px){
@@ -194,7 +203,10 @@
         grid-column: 1 / span 4;
     }
     #suggestion{
-        width: 92%;
+        width: 49vw;
+    }
+    .fields_container #nickname, #fullname, #phonenumber, #email{
+        width: 20vw;
     }
     .info{
         display: block;
@@ -203,7 +215,7 @@
     }
     .info_container h1{
         display: block;
-        margin-left: 3vh;
+        margin-left: 1.5vh;
     }
     .container_form #send:hover{
         background-color: var(--secondary_color);
@@ -213,6 +225,9 @@
     }
     #name_creactly{
         display: none;
+    }
+    .container_form h1{
+        font-size:  40px;
     }
 
 }
