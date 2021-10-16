@@ -19,9 +19,8 @@
 }
 .container{
     box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
-    margin-left: 5vh;
-    margin-right: 5vh;
-    margin-top: 5vh;
+    width: 80vw;
+    height: 50vh;
 }
 .container_form{
     background-color: var(--blue_op);
