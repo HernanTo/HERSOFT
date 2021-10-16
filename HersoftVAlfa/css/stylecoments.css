@@ -92,8 +92,8 @@
     display: none;
 }
 #name_creactly{
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
     text-align: center;
     font-family: 'Victor Mono';
     font-size:  40px;
