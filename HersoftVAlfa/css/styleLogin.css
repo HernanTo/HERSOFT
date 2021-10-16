@@ -22,7 +22,8 @@ header i{
 .contenedor_main_login{
     /* display: flex; */
     /* justify-content: center; */
-    height: 88.6vh;
+    height: 88.7vh;
+    width: 100vw;
     background: linear-gradient(83deg, #121212 0%, #da1c45 35%, #00FFF5 100%);
     /* background: green; */
     filter: blur(15px);
@@ -30,8 +31,10 @@ header i{
 .contenedor_login{
     position: absolute;
     height: 65vh;
-    width: 35vw;
-    left: 32.5%;
+    /* width: 35vw; */
+    width: 85vw;
+    /* left: 32.5%; */
+    left: 7%;
     background: rgba(231, 126, 126, 0.2);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.45);
     top: 16.25vh;
@@ -54,9 +57,6 @@ header i{
     margin-top: 40px;
 
 }
-#email_login{
-    margin-bottom: 45px;
-}
 #email_login, #password_login{
     background: red;
     width: 100%;
@@ -71,6 +71,9 @@ header i{
     padding: 3px;
     border-bottom: 3px solid black;
     font-size: 1rem;
+}
+#password_login{
+    margin-top: 30px;
 }
 #email_login::placeholder, #password_login::placeholder{
     color: black;
@@ -116,3 +119,15 @@ a{
     border-radius: 10px;
     color: white;
 } */
+@media (min-width:700px){
+    .contenedor_login{
+        width: 65vw;
+        left: 17%;
+    }
+}
+@media (min-width:1000px){
+    .contenedor_login{
+        width: 35vw;
+        left: 32.5%;
+    }
+}

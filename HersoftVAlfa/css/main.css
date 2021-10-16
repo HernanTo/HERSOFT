@@ -39,7 +39,7 @@ body{
 /*Menu*/
 header{
     display: grid;
-    grid-template-columns: 1.5fr 0.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     align-content: center;
     background: linear-gradient(374deg ,#121212,#121212, #121212,#da1c45);
     width: 100vw;
@@ -53,7 +53,7 @@ header{
     font-family: 'Victor Mono';
     color: white;
     text-decoration: none;
-    transform: translate(10px);
+    transform: translate(0px, 0px);
 }
 .logo-text span{
     color: var(--main_color);

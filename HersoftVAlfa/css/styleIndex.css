@@ -1,3 +1,6 @@
+header{
+    grid-template-columns: 1.5fr 0.5fr 1.5fr;
+}
 .banner h1{
     color: white;
     font-family: 'Victor Mono';

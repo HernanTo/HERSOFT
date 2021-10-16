@@ -52,7 +52,9 @@
         <h2>Iniciar Sesión</h2>
         <form action="" id="form_login">
             <input type="email" name="email_login" id="email_login" placeholder="Correo Electronico"><br>
+            <!-- <p>Correo no registrado</p> -->
             <input type="password" name="password_login" id="password_login" placeholder="Ingresa tu contraseña"><br>
+            <!-- <p>Contraseña Incorrecta</p> -->
             <br><br>
             <a href="#">Olvidaste tu contraseña?</a><br>
             <div id="container_end_login">
