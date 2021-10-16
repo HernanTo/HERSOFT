@@ -171,13 +171,13 @@
         font-size:  30px;
     }
 }
-@media(min-width:1200px){
+@media(min-width:1000px){
     .info_container{
         display: block;
     }
     .container{
         display: grid;
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 65% 35%;
     }
     .fields_container{
         display: grid;
@@ -201,7 +201,7 @@
         grid-column: 1 / span 4;
     }
     #suggestion{
-        width: 49vw;
+        width: 47.5vw;
     }
     .fields_container #nickname, #fullname, #phonenumber, #email{
         width: 20vw;
