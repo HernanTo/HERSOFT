@@ -119,6 +119,9 @@
     #send{
         margin-left: 64%;
     }
+    .container_form h1{
+        font-size:  20px;
+    }
 
 }
 @media (min-width:800px){
