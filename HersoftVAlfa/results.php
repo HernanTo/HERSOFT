@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="assets/img/Logo.gif" type="image/x-icon" />
     <link rel="stylesheet" href="assets/font/icons/css/uicons-solid-rounded.css" />
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -55,8 +56,27 @@
             </div>
         </nav>
     </header>
-    <div class="containerResults">
-        <h1> Resultados a tu busquedad MousePad </h1>
+    <div class="container_results">
+        <div class="aside_results">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio quam, quae doloremque temporibus minima beatae id libero. Velit aut aliquam amet ipsum, ullam rerum ad illo enim? Consequuntur, expedita!
+        </div>
+        <div class="container_all_results">
+            <a href="">
+                <div class="container_products_results">
+                <figure class="img_product_results">
+                    <img src="./assets/img/ejemplo.jpg" alt="">
+                </figure>
+                <hr>
+                <div class="description_results">
+                    <h2>Mouse Pad</h2>
+                    <p>Interesante Mouse pad con colores gamming</p>
+                </div>
+                <div class="prices_results">
+                    <h2>$20.000</h2>
+                </div>
+                </div>
+            </a>
+        </div>
     </div>
     <footer>
         <div class="aboutUs_index_index">
@@ -102,4 +122,5 @@
     <script src="./src/JS/main.js"></script>
     <script src="./src/JS/index.js"></script>t
 </body>
+
 </html>
