@@ -50,6 +50,7 @@
 #suggestion{
     height: 15vh;
 }
+
 #nick_name, #full_name, #phone_number, #e-mail, #coment{
     margin-left: 5vh;
     margin-right: 5vh;
@@ -92,6 +93,7 @@
     display: none;
 }
 #name_creactly{
+    margin-top: auto;
     text-align: center;
     font-family: 'Victor Mono';
     font-size:  40px;
@@ -162,7 +164,7 @@
         margin-left: 72%;
     }
     .fields_container #nickname, #fullname, #phonenumber, #email, #suggestion{
-        width: 25vw;
+        width: 23vw;
     }
     #suggestion{
         width: 60.5vw;
