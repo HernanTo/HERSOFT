@@ -45,39 +45,50 @@
             </div>
         </nav>
     </header>
+    
+    <div class="container">  <!--Contenedor de la página-->
 
-    <div class="conteiner">
-<!--Conetendor del formulario -->
+        <div class="container_form"> <!--Contenedor del formulario-->
 
-    <div class="container_form"> <!--Contenedor del formulario completo-->
+            <div class="fields_container"> <!--Contenedor de los campos de respuesta del formulario-->
 
-        <h1>Sugerencias</h1>
+                <h1>Contáctanos</h1>
+                    <div id="nick_name">
+                        <label>Ninckname</label><br><br><input type="text" name="Ninckname" placeholder="Ingrese su nombre de usuario" id="nickname" >
+                    </div>
+                    <div id="full_name">
+                        <label>Nombre completo</label><br><br><input type="text" name="Fullname" placeholder="Ingrese su nombre completo" id="fullname" >
+                    </div>
+                    <div id="phone_number">
+                        <label>Número de celular</label><br><br><input type="tel" name="phonenumber" placeholder="Ingrese su número telefónico" id="phonenumber" >
+                    </div>
+                    <div id="e-mail">
+                        <label>Correo electrónico</label><br><br><input type="email" name="Email" placeholder="Ingrese su correo electrónico" id="email" >
+                    </div>
+                    <div id="coment">
+                        <label>Sugerencias:</label><br><br><textarea name="Suggestion" id="suggestion" placeholder="Escriba su sugerencia"></textarea><br><br>
+                    </div>
 
-        <form action="">
-        <div class="field_conteiner"> <!--Contenedor de los campos de respuesta del formlario-->
-            <div class="name_user">
-                <input type="text" name="nameuser" placeholder="Ingrese su nombre de usuario" id="nameuser">
             </div>
 
-            <div class="e-mail">
-                <input type="email" name="email" placeholder="Ingrese su correo electrónico" id="email">
-            </div>
-            <div class="coments">
-                <textarea name="coments" id="suggestion" placeholder="Ingrese su comentario"></textarea>
-            </div>
-        </div>
-            <input type="submit" name="enviar" id="send"maxlength="300"><br><br>
-
-        </form>
+                    <input type="submit" id="send"><br><br>
 
         </div>
-        <div class="info">
-            <h1>Más información</h1>
-            <p>hersoft@gmail.com</p>
-            <p>311-3568956</p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, nemo voluptates laborum nostrum quod harum dignissimos, sequi, facere eum possimus soluta! Architecto facilis eveniet doloremque quibusdam neque, enim culpa sit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum debitis, sint consequuntur nulla nobis nemo, ducimus numquam dicta, sequi beatae ipsa quam odio asperiores amet neque hic quibusdam autem sit?
+
+        <div class="info_container"> <!--Contenedor de la información-->
+
+                <h1>Más información</h1><br>
+                    <p class="info">333-333-3333</p>
+                    <p class="info">creactly@gmail.com</p>
+                    <p class="info">cll 1 dig 98 crr 87 - norte</p><br>
+                    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe mollitia, sit consequatur modi dignissimos, veniam, odit iure porro eveniet est quasi perspiciatis officiis. Suscipit, excepturi. Nihil impedit delectus eligendi ad.</p>
+
+                    <p id="name_creactly">C <br> R <br> E <br> A <br> C <br> T <br> L <br> Y </p>
+
         </div>
+
     </div>
+
     <script src="./src/JS/main.js"></script>
 </body>
 </html>

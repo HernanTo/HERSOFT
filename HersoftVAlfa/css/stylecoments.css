@@ -13,304 +13,196 @@
     font-family: 'Victor Mono';
     src: url(../assets/font/font_text/VictorMono-Bold.ttf);
 }
-
-/*Estilos celular*/
-@media(max-width:700px){
-.info{
-    display: none;
+@font-face{
+    font-family: 'Monospace';
+    src: url(../assets/font/font_text/MonospaceTypewriter.ttf);
+}
+.container{
+    box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 5vh;
 }
 .container_form{
-    background: rgb(18,18,18);
-    background: linear-gradient(210deg, rgba(17,32,49,0.8) 0%, rgba(218,28,69,1) 100%);
-    padding: 20px;
+    background-color: var(--blue_op);
     font-family: 'Modern Sans';
-    border-radius: 10px;
+    font-weight: bold;
+    color: var(--white_op);
+}
+.container_form h1{
+    margin-left: 4vh;
     color: white;
-    width: 320px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 20px 0 rgb(1, 1, 1, 0.5);
+    font-family: 'Victor Mono';
+    font-size: 50px;
+    font-weight: bold;
 }
-form label{
-    width: 75px;
-	display:inline-block;
-}
-
-#nameuser, #email{
-    width:100%;
-    outline: var(--background);
+.fields_container #nickname, #fullname, #phonenumber, #email, #suggestion{
     background-color: var(--background);
-    display: inline-block;
-    height: 40px;
-    border-radius: 10px;
-    border-bottom: solid var(--main_color);
+    color: white;
+    outline: var(--background);
+    padding: 1.5vh;
+    border-bottom: none;
     border-top: none;
     border-left: none;
     border-right: none;
+    width: 90%;
 }
 #suggestion{
-    width: 100%;
-	height:100px;
-	border-radius:3px;
-	background-color:var(--background);			
-	margin:8px 0;
-	display:block;
-    border-radius: 10px;
-    border-bottom: solid var(--main_color);
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    color: white;
+    height: 15vh;
 }
-.e-mail{
-    margin-top: 20px;
-}
-.coments{
-    margin-top: 20px;
+#nick_name, #full_name, #phone_number, #e-mail, #coment{
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 .container_form #send{
-    padding: 5px;
-	width: 30%;
-	margin-top:32px;
-	border-radius:5px;
-    margin-left: 230px;
+    background-color: var(--secondary_color);
+    padding: 1vh;
     font-family: 'Victor Mono';
-    border: solid var(--secondary_color);
-    font-weight:bold;
-	color: #ffff;
-	background-color: var(--blue_op);
-} 
-
-.container_form h1{
-    margin-top: 10px;
-    text-align: center;
-    color: var(--main_color);
-    font-family: 'Victor Mono';
-    font-size: 40px;
-}
-
-::placeholder{
-    text-align: center;
-    font-family: 'Modern Sans';
+    font-weight: bold;
     font-size: 15px;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none ;
+    width: 25%;
 }
+::placeholder{
+    font-family: 'Modern Sans';
+    font-weight: bold;
+    
 }
-/*Estilos tablet*/
-@media (min-width:1000px) {
-    .info{
+.info_container{
+    display: none;
+    color: var(--white_op);
+}
+.info_container h1{
+    font-family: 'Victor Mono';
+    font-weight: bold;
+    color: var(--secondary_color);
+    font-size: 30px;
+    display: none;
+}
+.info{
+    color: white;
+    font-weight: bold;
+    font-family: 'Modern Sans';
+    font-size: 20px;
+    display: none;
+}
+#name_creactly{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    font-family: 'Victor Mono';
+    font-size:  40px;
+    display: none;
+}
+@media (min-width:400px){
+    .container{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .fields_container{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 2vh;
+    }
+    #nick_name, #full_name, #phone_number, #e-mail, #coment{
+        grid-column: 1 / 3;
+    }
+    .info_container{
         display: none;
     }
-    .container_form{
-        background: rgb(18,18,18);
-        background: linear-gradient(210deg, rgba(17,32,49,0.8) 0%, rgba(218,28,69,1) 100%);
-        padding: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        font-family: 'Modern Sans';
-        border-radius: 10px;
-        color: white;
-        width: 700px;
-        margin-top: 30px;
-        box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
-
-    }
-    .field_conteiner{
-        display: grid;   
-        grid-template-columns: auto auto;
-        gap:  4vh;
-    }
-    .name_user{
-        grid-column: 1 /  span 6;
-
-    }
-    .e-mail{
-        grid-column: 7 / span 6;
-        margin-top:  0px;
-    }
-    .coments{
-        grid-column: 1 / span 12;
-    }
-
-    #nameuser, #email{
-        outline: var(--background);
-        background-color: var(--background);
-        height: 60px;
-        border-radius: 10px;
-        border-bottom: solid var(--main_color);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: var(--white_op);
-        text-align: center;
-        font-size: 22px;
-        width: 100%;
-
-
-    }
-
-    #suggestion{
-        width: 100%;
-        height:150px;
-        background-color:var(--background);			
-        border-radius: 10px;
-        border-bottom: solid var(--main_color);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: var(--white_op);
-        outline: var(--background);
-        text-align: center;
-        padding: 1px;
-        margin-top: -10px;
-        font-size: 22px;
-        
-    }
-    .container_form #send{
-        padding: 5px;
-        width: 30%;
-        margin-top:32px;
-        border-radius:5px;
-        margin-left: 495px;
-        border: solid var(--blue_op);
-        font-weight:bold;
-        color: #ffff;
-        background-color: var(--blue_op);
-        font-size: 22px;
-        box-shadow: 0px 0px 20px 0px rgba(218, 28, 69, 0.9);
-        transition: 2s;
-    } 
-    
-    .container_form h1{
-        margin-top: 10px;
-        text-align: center;
-        color: var(--main_color);
-        font-family: 'Victor Mono';
-        font-size: 50px;
-    }
-    ::placeholder{
-        text-align: center;
-        font-family: 'Modern Sans';
-        font-size: 22px;
-    }
-    .container_ #send:hover{
-        background-color:var(--background);
-        color: #fff;
-        border: solid var(--background);
-        box-shadow: 0 0 20px 0px var(--blue_op);
+    #send{
+        margin-left: 64%;
     }
 }
-/*Estilos PC*/
-@media (min-width:1200px){
-    .conteiner{
-        margin-top: 30px;
-        margin-left: 15%;
-        margin-right:15%;
+@media (min-width:800px){
+    .info_container{
+        display: block;
+    }
+    .container{
         display: grid;
-        grid-template-columns:  110vh 30vh;
-        grid-auto-rows: auto;
-        border-radius: 10px;
+        grid-template-columns: 80% 20%;
+    }
+    .fields_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2vh;
+    }
+
+    #nick_name{
+        grid-column: 1 / span 1
+    }
+    #full_name{
+        grid-column:  2 /  span 1;
+    }
+    #phone_number{
+        grid-column: 1 / span 1;
+    }
+    #e-mail{
+        grid-column:  2 / span 1;
+    }
+    #coment{
+        grid-column: 1 / 6;
+    }
+    #name_creactly{
+        display: block;
+    }
+    #send{
+        margin-left: 72%;
+    }
+}
+@media(min-width:1200px){
+    .info_container{
+        display: block;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    .fields_container{
+        display: grid;
+        grid-template-columns: 50%  50%;
+        gap: 2vh;
+    }
+
+    #nick_name{
+        grid-column: 1 / span 1
+    }
+    #full_name{
+        grid-column:  2 /  span 1;
+    }
+    #phone_number{
+        grid-column: 1 / span 1;
+    }
+    #e-mail{
+        grid-column:  2 / span 1;
+    }
+    #coment{
+        grid-column: 1 / span 4;
+    }
+    #suggestion{
+        width: 92%;
     }
     .info{
-        background:linear-gradient(290deg, rgba(17,32,49,0.1) 0%, rgba(17,32,49,0.9) 100%);
-        box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
         display: block;
-        grid-column: 2 / 3;
-        color:#fff;
-        border-radius: 10px;
-
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
-    .container_form{
-        padding: 40px;
-        font-family: 'Modern Sans';
-        color: white;
-        margin-top: 0px;
-        grid-row: 1 / 2;
-        grid-column: 1 / 2;
-    } 
-
-    .field_conteiner{
-        display: grid;   
-        grid-template-columns: auto auto;
-        gap:  4vh;
-    }
-    .name_user{
-        grid-column: 1 /  span 6;
-
-    }
-    .e-mail{
-        grid-column: 7 / span 6;
-    }
-    .coments{
-        grid-column: 1 / span 12;
-    }
-
-    #nameuser, #email{
-        outline: var(--background);
-        background-color: var(--background);
-        height: 60px;
-        border-radius: 10px;
-        border-bottom: solid var(--main_color);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: var(--white_op);
-        text-align: center;
-        font-size: 22px;
-        width: 100%;
-
-    }
-
-    #suggestion{
-        width: 100%;
-        height:150px;
-        background-color:var(--background);			
-        border-radius: 10px;
-        border-bottom: solid var(--main_color);
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: var(--white_op);
-        outline: var(--background);
-        text-align: center;
-        padding: 1px;
-        margin-top: -10px;
-        font-size: 22px;
-        
-    }
-    .container_form #send{
-        padding: 5px;
-        width: 30%;
-        margin-top:32px;
-        border-radius:5px;
-        margin-left: 495px;
-        border: solid var(--blue_op);
-        font-weight:bold;
-        color: #ffff;
-        background-color: var(--blue_op);
-        font-size: 22px;
-        box-shadow: 0px 0px 20px 0px rgba(218, 28, 69, 0.9);
-        transition: 2s;
-    } 
-    
-    .container_form h1{
-        margin-top: 10px;
-        text-align: center;
-        color: var(--main_color);
-        font-family: 'Victor Mono';
-        font-size: 50px;
-    }
-    
-    ::placeholder{
-        text-align: center;
-        font-family: 'Modern Sans';
-        font-size: 22px;
+    .info_container h1{
+        display: block;
+        margin-left: 3vh;
     }
     .container_form #send:hover{
-        background-color:var(--background);
-        color: #fff;
-        border: solid var(--background);
-        box-shadow: 0 0 20px 0px var(--blue_op);
+        background-color: var(--secondary_color);
+        color: var(--background);
+        border: none;
+        box-shadow: 0px 0px 20px 0px rgba(218, 28, 69, 0.9);
+    }
+    #name_creactly{
+        display: none;
     }
 
 }
