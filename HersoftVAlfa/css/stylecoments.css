@@ -19,8 +19,8 @@
 }
 .container{
     box-shadow: 0 0 20px 0 rgba(138, 138, 138, 0.3);
-    margin-left: 10vh;
-    margin-right: 10vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
     margin-top: 5vh;
 }
 .container_form{
@@ -45,7 +45,6 @@
     border-top: none;
     border-left: none;
     border-right: none;
-    width: 90%;
 }
 #suggestion{
     height: 15vh;
@@ -98,7 +97,7 @@
     font-size:  40px;
     display: none;
 }
-@media (min-width:400px){
+@media (min-width:0px){
     .container{
         display: grid;
         grid-template-columns: 100%;
@@ -111,12 +110,16 @@
     #nick_name, #full_name, #phone_number, #e-mail, #coment{
         grid-column: 1 / 3;
     }
+    .fields_container #nickname, #fullname, #phonenumber, #email, #suggestion{
+        width: 50vw;
+    }
     .info_container{
         display: none;
     }
     #send{
         margin-left: 64%;
     }
+
 }
 @media (min-width:800px){
     .info_container{
