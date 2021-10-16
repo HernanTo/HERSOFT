@@ -19,7 +19,7 @@
 }
 .container{
     width: 80vw;
-    height: 70vh;
+    height: 60vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3vw;
@@ -92,8 +92,6 @@
     display: none;
 }
 #name_creactly{
-    margin-top: 0 auto;
-    margin-bottom: 0 auto;
     text-align: center;
     font-family: 'Victor Mono';
     font-size:  40px;
@@ -128,7 +126,7 @@
     }
 
 }
-@media (min-width:800px){
+@media (min-width:700px){
     .info_container{
         display: block;
     }
