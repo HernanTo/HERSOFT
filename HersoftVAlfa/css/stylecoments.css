@@ -115,7 +115,7 @@
         grid-column: 1 / span 1;
     }
     .fields_container #nickname, #fullname, #phonenumber, #email, #suggestion{
-        width: 70vw;
+        width: 65vw;
     }
     .info_container{
         display: none;
