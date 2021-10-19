@@ -1,0 +1,79 @@
+body{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
+}
+header{
+    background: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+header i{
+    color: black;
+}
+.container_sign_in{
+    background: rgba(231, 126, 126, 0.2);
+    width: 90vw;
+    height: 110vh;
+    margin-left: 5vw;
+    color: black;
+    font-family: 'Modern Sans';
+    border-radius: 10px;
+}
+.container_sign_in h2{
+    text-align: center;
+    font-family: 'Monospace';
+    padding-top: 20px;
+}
+.container_sign_in form{
+    padding: 40px;
+}
+form label{
+    font-weight: bold;
+    font-size: 0.98rem;
+}
+.container_sign_in input{
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 3px solid black;
+    width: 100%;
+    color: black;
+    margin-bottom: 20px;
+    height: 30px;
+    border-bottom-left-radius: 8px;
+    font-size: 1.3rem;
+}
+form #sign_btn{
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    font-family: 'Victor Mono';
+    cursor: pointer;
+}
+@media (min-width:700px){
+    .container_sign_in{
+        width: 65vw;
+        margin-left: 17.5%;
+    }
+}
+@media (min-width: 1000px){
+    .container_sign_in{
+        width: 45vw;
+        margin-left: 27.5%;
+    }
+    .container_sign_in input{
+        border-bottom: 2px solid white;
+        transition: 0.4s;
+    }
+    .container_sign_in input:hover{
+        border-bottom: 4px solid black;
+    }
+}
+@media (min-width: 1200px) {
+    .container_sign_in{
+        margin-left: 32.5%;
+        width: 35vw;
+    }
+}
