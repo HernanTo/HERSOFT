@@ -31,5 +31,4 @@ if (isset($_POST['save_register'])) {
       }
   }
 }
-  header ('Location: ../../index.html');
-?>
+header ('Location: ../../index.html');
