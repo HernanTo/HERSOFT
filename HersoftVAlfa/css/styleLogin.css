@@ -30,7 +30,7 @@ header i{
 }
 .contenedor_login{
     position: absolute;
-    /* width: 35vw; */
+    width: 45vw;
     width: 85vw;
     /* left: 32.5%; */
     left: 7%;
