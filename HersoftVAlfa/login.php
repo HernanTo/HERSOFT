@@ -50,7 +50,7 @@
     </div>
     <div class="contenedor_login">
         <h2>Iniciar Sesión</h2>
-        <form action="" id="form_login">
+        <form action="./src/PHP/validar.php" id="form_login">
             <input type="email" name="email_login" id="email_login" placeholder="Correo Electronico"><br>
             <!-- <p>Correo no registrado</p> -->
             <input type="password" name="password_login" id="password_login" placeholder="Ingresa tu contraseña"><br>
@@ -59,7 +59,7 @@
             <a href="#">Olvidaste tu contraseña?</a><br>
             <div id="container_end_login">
                 <a href="">Crear Cuenta</a><br>
-                <button type="submit">Iniciar Sesión</button>
+                <button type="submit" name="btn_login">Iniciar Sesión</button>
             </div>
         </form>
     </div>
