@@ -36,7 +36,11 @@ if ($user == ($_POST['user'])){
       }
   }
 }
+<<<<<<< HEAD:HersoftVAlfa/src/PHP/save_register.php
 
   header ('Location: index.html');
 
+=======
+  header ('Location: index.html');
+>>>>>>> 6c22d22ff94ad22f53f27067afbbc204da5fe2d0:HersoftVAlfa/save_register.php
 ?>
