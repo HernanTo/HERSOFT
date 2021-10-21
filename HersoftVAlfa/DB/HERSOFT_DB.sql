@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-10-2021 a las 06:29:14
+-- Tiempo de generación: 22-10-2021 a las 00:35:08
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.7
 
@@ -24,23 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `admin`
---
-
-CREATE TABLE `admin` (
-  `ID_Admin` int(11) NOT NULL,
-  `Name` varchar(100) DEFAULT NULL,
-  `Last_Name` varchar(100) DEFAULT NULL,
-  `User_password` varchar(15) DEFAULT NULL,
-  `Email` varchar(100) DEFAULT NULL,
-  `Address` varchar(100) DEFAULT NULL,
-  `Age` int(11) DEFAULT NULL,
-  `Phone_number` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `category`
 --
 
@@ -57,8 +40,8 @@ CREATE TABLE `category` (
 
 CREATE TABLE `market` (
   `ID_Market` int(11) NOT NULL,
-  `Quanty_products_boughy` int(11) DEFAULT NULL,
-  `Total_to_pay` int(11) DEFAULT NULL,
+  `Quanty_products_bouyghy` int(11) DEFAULT NULL,
+  `Total_to_play` int(11) DEFAULT NULL,
   `Payment_method` varchar(100) DEFAULT NULL,
   `ID_User` int(11) DEFAULT NULL,
   `ID_Publication` int(11) DEFAULT NULL
@@ -67,17 +50,17 @@ CREATE TABLE `market` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `publications`
+-- Estructura de tabla para la tabla `publication`
 --
 
-CREATE TABLE `publications` (
+CREATE TABLE `publication` (
   `ID_Publication` int(11) NOT NULL,
   `Name_product` varchar(100) DEFAULT NULL,
-  `Publication_date` date DEFAULT NULL,
-  `Description` varchar(2000) DEFAULT NULL,
+  `Publication_date` varchar(100) DEFAULT NULL,
+  `Description` varchar(100) DEFAULT NULL,
   `Price` int(11) DEFAULT NULL,
   `ID_Category` int(11) DEFAULT NULL,
-  `ID_Admin` int(11) DEFAULT NULL
+  `ID_User` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -89,7 +72,7 @@ CREATE TABLE `publications` (
 CREATE TABLE `sending` (
   `ID_Sending` int(11) NOT NULL,
   `shippinh_company` varchar(100) DEFAULT NULL,
-  `shipping_date` date DEFAULT NULL,
+  `shipping_date` varchar(100) DEFAULT NULL,
   `ID_User` int(11) DEFAULT NULL,
   `ID_Publication` int(11) DEFAULT NULL,
   `ID_Market` int(11) DEFAULT NULL
@@ -103,10 +86,9 @@ CREATE TABLE `sending` (
 
 CREATE TABLE `suggestion` (
   `Nombre` varchar(100) DEFAULT NULL,
-  `Last_Name` varchar(100) DEFAULT NULL,
+  `Last_name` varchar(100) DEFAULT NULL,
   `Email` varchar(100) DEFAULT NULL,
   `Phone_number` bigint(20) DEFAULT NULL,
-  `coment` varchar(500) DEFAULT NULL,
   `ID_User` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -119,23 +101,17 @@ CREATE TABLE `suggestion` (
 CREATE TABLE `users` (
   `ID_User` int(11) NOT NULL,
   `Name` varchar(100) DEFAULT NULL,
-  `Last_Name` varchar(100) DEFAULT NULL,
+  `Last_name` varchar(100) DEFAULT NULL,
   `User_password` varchar(15) DEFAULT NULL,
-  `Email` varchar(100) DEFAULT NULL,
+  `Emali` varchar(100) DEFAULT NULL,
   `Address` varchar(100) DEFAULT NULL,
   `Age` int(11) DEFAULT NULL,
-  `Phone_number` bigint(20) DEFAULT NULL
+  `account_type` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Índices para tablas volcadas
 --
-
---
--- Indices de la tabla `admin`
---
-ALTER TABLE `admin`
-  ADD PRIMARY KEY (`ID_Admin`);
 
 --
 -- Indices de la tabla `category`
@@ -152,19 +128,18 @@ ALTER TABLE `market`
   ADD KEY `ID_Publication` (`ID_Publication`);
 
 --
--- Indices de la tabla `publications`
+-- Indices de la tabla `publication`
 --
-ALTER TABLE `publications`
+ALTER TABLE `publication`
   ADD PRIMARY KEY (`ID_Publication`),
   ADD KEY `ID_Category` (`ID_Category`),
-  ADD KEY `ID_Admin` (`ID_Admin`);
+  ADD KEY `ID_User` (`ID_User`);
 
 --
 -- Indices de la tabla `sending`
 --
 ALTER TABLE `sending`
   ADD PRIMARY KEY (`ID_Sending`),
-  ADD KEY `ID_User` (`ID_User`),
   ADD KEY `ID_Publication` (`ID_Publication`),
   ADD KEY `ID_Market` (`ID_Market`);
 
@@ -197,9 +172,9 @@ ALTER TABLE `market`
   MODIFY `ID_Market` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `publications`
+-- AUTO_INCREMENT de la tabla `publication`
 --
-ALTER TABLE `publications`
+ALTER TABLE `publication`
   MODIFY `ID_Publication` int(11) NOT NULL AUTO_INCREMENT;
 
 --
@@ -217,22 +192,21 @@ ALTER TABLE `sending`
 --
 ALTER TABLE `market`
   ADD CONSTRAINT `market_ibfk_1` FOREIGN KEY (`ID_User`) REFERENCES `users` (`ID_User`),
-  ADD CONSTRAINT `market_ibfk_2` FOREIGN KEY (`ID_Publication`) REFERENCES `publications` (`ID_Publication`);
+  ADD CONSTRAINT `market_ibfk_2` FOREIGN KEY (`ID_Publication`) REFERENCES `publication` (`ID_Publication`);
 
 --
--- Filtros para la tabla `publications`
+-- Filtros para la tabla `publication`
 --
-ALTER TABLE `publications`
-  ADD CONSTRAINT `publications_ibfk_1` FOREIGN KEY (`ID_Category`) REFERENCES `category` (`ID_Category`),
-  ADD CONSTRAINT `publications_ibfk_2` FOREIGN KEY (`ID_Admin`) REFERENCES `admin` (`ID_Admin`);
+ALTER TABLE `publication`
+  ADD CONSTRAINT `publication_ibfk_1` FOREIGN KEY (`ID_Category`) REFERENCES `category` (`ID_Category`),
+  ADD CONSTRAINT `publication_ibfk_2` FOREIGN KEY (`ID_User`) REFERENCES `users` (`ID_User`);
 
 --
 -- Filtros para la tabla `sending`
 --
 ALTER TABLE `sending`
-  ADD CONSTRAINT `sending_ibfk_1` FOREIGN KEY (`ID_User`) REFERENCES `users` (`ID_User`),
-  ADD CONSTRAINT `sending_ibfk_2` FOREIGN KEY (`ID_Publication`) REFERENCES `publications` (`ID_Publication`),
-  ADD CONSTRAINT `sending_ibfk_3` FOREIGN KEY (`ID_Market`) REFERENCES `market` (`ID_Market`);
+  ADD CONSTRAINT `sending_ibfk_1` FOREIGN KEY (`ID_Publication`) REFERENCES `publication` (`ID_Publication`),
+  ADD CONSTRAINT `sending_ibfk_2` FOREIGN KEY (`ID_Market`) REFERENCES `market` (`ID_Market`);
 
 --
 -- Filtros para la tabla `suggestion`
