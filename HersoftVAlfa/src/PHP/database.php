@@ -3,6 +3,6 @@
                                     'localhost',
                                     'root',
                                     '',
-                                    'hersoft'
+                                    'Hersoft'
     );
 ?>
