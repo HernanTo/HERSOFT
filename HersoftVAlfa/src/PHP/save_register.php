@@ -2,8 +2,6 @@
 
 include ('database.php');
 
-if (isset($_POST['save_register'])) {
-
     $admin = $_POST['admin'];
     $user = $_POST['user'];
 
@@ -15,7 +13,9 @@ if (isset($_POST['save_register'])) {
       $age_sign = $_POST['age_sign'];
       $password_sign = $_POST['password_sign'];
 
-  if ($user == ($_POST['user'])){
+if ($user == ($_POST['user'])){
+
+    if (isset($_POST['save_register'])) {
       
     $query = "INSERT INTO users(ID_User, Name, Last_Name, User_password, Email, Address, Age)      VALUES  ('$id_user_sign','$name_sign','$last_name_sign','$password_sign','$email_sign','$address_sign','$age_sign')";
 
@@ -23,9 +23,10 @@ if (isset($_POST['save_register'])) {
       if(!$result) {
         die("Query Failed.");
       }
-  }
+    }
+}elseif ($admin == ($_POST['admin'])){
 
-  if ($admin == ($_POST['admin'])){
+  if (isset($_POST['save_register'])) {
 
     $query = "INSERT INTO admin(ID_Admin, Name, Last_Name, User_password, Email, Address, Age)      VALUES  ('$id_user_sign','$name_sign','$last_name_sign','$password_sign','$email_sign','$address_sign','$age_sign')";
   
@@ -36,9 +37,6 @@ if (isset($_POST['save_register'])) {
   }
 }
 
-
   header ('Location: index.html');
-
-
 
 ?>
