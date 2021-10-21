@@ -102,7 +102,7 @@ i:hover{
 #nav{
     position: absolute;
     z-index: 1;
-    background: var(--blue_op);
+    background: rgba(0, 0, 0,0.6);
     height: 100vh;
     width: 100vw;
     top: 0px;
@@ -136,7 +136,6 @@ i:hover{
     border-radius: 10px;
     transition-property: background,width,clip-path;
     transition-duration: 0.8s;
-    background: red;
 }
 .nav_btn{
     padding: 0;
@@ -238,38 +237,41 @@ footer h2{
         width: 100%;
     }
     #menu a li{
-        width: 45%;
-        margin-left: 27.5%;
+        width: 30%;
+        /* border: 2px solid var(--secondary_color); */
+        margin-left: 35%;
         transition: 0.8s;
     }
     #menu a li:hover{
+        border: 2px solid var(--secondary_color);
         transform: scale(1.1);
+        width: 45%;
+        margin-left: 27.5%;
     }
     .nav_btn{
         padding: 0;
-        /* background: green; */
         width: 100%;
         margin-left: 0vw;
         margin-top: 3vh;
+        /* display: grid; */
+        /* justify-content: center; */
     }
-    .nav_btn button{
+    .sign_in_btn , .login_up_btn{
         text-align: center;
+        width: 10px;
         background: transparent;
         margin-bottom: 5vh;
         padding: 10px;
-        width: 100%;
         border-radius: 10px;
         transition-property: background;
         transition-duration: 0.8s;
-        width: 45%;
-        border: 3px solid red;
+        border: 3px solid var(--main_color);
         color:white;
         text-decoration: none;
         text-align: center;
         font-family: 'Modern Sans';
         font-weight: bold;
         font-size: 1.5rem;
-        margin-left: 29.5%;
     }
     /* **footer */
     footer{
@@ -281,4 +283,38 @@ footer h2{
     .aboutUs_index_index{
         width: 75%;
     }
+}
+.buscador_index form{
+    position: relative;
+    display: flex;
+    height: 6vh;
+    justify-content: center;
+    margin-top: -20px;
+}
+.buscador_index form button{
+    background: none;
+    border: none;
+}
+.buscador_index form  button i{
+    color: white;
+}
+.buscador_index form  button i:hover{
+    color: var(--secondary_color);
+}
+.buscador_index form  input{
+    outline: none;
+    font-family: 'Victor Mono';
+    border-radius: 5px;
+    width: 10%;
+    transition: 0.6s;
+    background: var(--blue_op);
+    color: white;
+}
+.buscador_index form input{
+    color: white;
+    padding-left: 20px;
+    border: none;
+}
+.buscador_index form input:hover{
+    width: 20%;
 }

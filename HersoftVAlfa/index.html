@@ -50,11 +50,8 @@
           <a href="FAQ"><li>FAQ</li></a>
           <a href="contactUs.html"><li>Contactanos</li></a>
         </ul>
-        <div class="nav_btn">
-          <button class="sign_in_btn">Registrate</button>
-          <br />
-          <button class="login_up_btn">Iniciar Sesión</button>
-        </div>
+          <a href="./signIn.php" class="sign_in_btn">Registrate</a>
+          <a href="./login.php" class="login_up_btn">Iniciar Sesión</a>
       </nav>
     </header>
     <div class="banner">
@@ -67,27 +64,13 @@
         <img src="./assets/img/Logo.gif" alt="logo Creactly" />
       </figure>
     </div>
-    <div class="contenedor_categorias_index">
-      <a href="" class="hot_products">uwu</a>
-      <a href="" class="products_inn">uwu</a>
-      <a href="" class="products_ofert">uwu</a>
-      <a href="" class="all_products">uwu</a>
-      <a href="" class="best_products">
-        <img src="./assets/img/icons_png/icon.png" alt="">
-        <h2>
-          Mejores
-          <br>
-          Productos
-        </h2>
-      </a>
-      <a href="" class="hallowen_products">
-        <img src="./assets/img/icons_png/icon_halloween.png" alt="">
-        <h2>
-          Productos 
-          <br>
-          Hallowen
-        </h2>
-      </a>
+    <div class="buscador_index">
+      <form action="" method="post">
+        <input type="text" name="search_index" id="search_index" placeholder="Buscar Producto">
+        <button type="submit">
+        <i class=" fi-sr-search"></i>
+      </button>
+    </form>
     </div>
     <div class="container">
       <h2>Lorem ipsum dolor</h2>
@@ -270,7 +253,7 @@
         </a>
         <a class="containerProducts" href="product.html">
           <img src="assets/img/ejemplo.jpg" alt="" />
-          <h3>Name Products</h3>
+          <>Name Products</>
           <div class="hidden_desc">
             <button type="submit" class="add_car_btn">
               <i class="fi-sr-shopping-cart-add"></i>
