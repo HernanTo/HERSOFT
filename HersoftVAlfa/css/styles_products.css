@@ -1,0 +1,434 @@
+:root{
+    --colorFondo:#121212;
+    --colorBase: #00FFF5;
+    --colorTexto:#ffffff;
+    --colorSecundario: #da1c45;
+    --colorConOpacidad: rgba(0, 255, 245,0.3);
+    --margen: 100px;
+}
+@font-face {
+    font-family: 'Modern';
+    src: url(../assets/font/font_text/ModernSans-Light.otf);
+}
+@font-face{
+    font-family: 'Victor-Mono';
+    src: url(../assets/font/font_text/VictorMono-Bold.ttf);
+}
+/*producto*/
+.productoVenta{
+    background: #242424;
+    margin-left: 213px;
+    width: 1123px;
+    border-radius: 12px 12px 12px 12px;
+    height: 1543px;
+}
+.imagenes{
+    width: 100px;
+    border-radius: 12px 12px 12px 12px;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 40px;
+    height: 500px;
+    background: rgba(36, 46, 139, 0.3);
+}
+#imgUno,#imgDos,#imgTres,#imgCuatro,#imgCinco{
+    border: 0px solid #f62f59;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 12px 12px 12px 12px;
+    background: none;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+#imgUno{
+    margin-top: 16.5px;
+    background-image: url(../assets/img/ejemplo.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#imgDos{
+    margin-top: 113px;
+    background-image: url(../assets/img/ejemploDos.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#imgTres{
+    margin-top: 209.5px;
+    background-image: url(../assets/img/ejemploTres.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#imgCuatro{
+    margin-top: 306px;
+    background-image: url(../assets/img/ejemploCuatro.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#imgCinco{
+    margin-top: 402px;
+    background-image: url(../assets/img/ejemploCinco.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+#imgUno:hover,#imgDos:hover,#imgTres:hover,#imgCuatro:hover,#imgCinco:hover{
+    width: 85px;
+    height: 85px;
+    transition: all 0.3s;
+    transition-delay: 0.2s;
+}
+/*rgba(0, 255, 245,0.3)*/
+#producto{
+    display: inline-block;
+    border: 0px solid #f62f59;
+    border-radius: 12px 12px 12px 12px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 40px;
+    height: 500px;
+    width: 500px;
+    background-image: url(../assets/img/ejemplo.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    transition-duration: 0.5s;
+}
+#infoventa{
+    display: inline-block;
+    margin-left: 582px;
+    width: 363px;
+    height: 493px;
+    margin-top: 40px;
+    position: absolute;
+    border: 3px solid var(--colorBase);
+    border-radius: 12px 12px 12px 12px;
+}
+#infoventa>h2{
+    color: var(--colorSecundario);
+    font-family: 'victor-Mono';
+    font-weight: bold;
+    margin-left: 30px;
+}
+#infoventa>h4{
+    color: var(--colorTexto);
+    font-size: 1.2rem;
+    margin-left: 30px;
+    font-family: 'Modern';
+}
+#infoventa>h5{
+    color: var(--colorBase);
+    font-size: 15px;
+    margin-left: 30px;
+    font-family: 'Modern';
+    margin-top: -10px;
+}
+#comprar{
+    display: block;
+    width: 303px;
+    height: 50px;
+    margin-left: 30px;
+    border: 3px solid #f62f59;
+    border-radius: 12px 12px 12px 12px;
+    font-family: 'Modern';
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    margin-top: 140px;
+    cursor:pointer;
+    background: none;
+    color: white;
+    transition: all 0.8s;
+}
+.carrito{
+    display: block;
+    width: 303px;
+    height: 50px;
+    margin-left: 30px;
+    border: 3px solid var(--colorBase);
+    border-radius: 12px 12px 12px 12px;
+    background: none;
+    font-family: 'Modern';
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    margin-top: 216px;
+    cursor:pointer;
+    color: white;
+}
+#comprar:hover{
+    width: 307px;
+    height: 54px;
+    transition: all 0.8s;
+    transition-delay: 40ms;
+    color: var(--colorFondo);
+    border-color: none;
+    background: linear-gradient(to left, #00fff5,#f62f59);
+    box-shadow: 2px 2px  40px 6px #f62f59;
+}
+.carrito:hover{
+    width: 307px;
+    height: 54px;
+    transition: all 0.8s;
+    transition-delay: 40ms;
+    color: var(--colorFondo);
+    border-color:none;
+    background: linear-gradient(to left, #f62f59,#00fff5);
+    box-shadow: 2px 2px  40px 6px #00fff5;
+}
+.especificaciones{
+    display: inline-block;
+    margin-left: 40px;
+    border-top: 3px solid var(--colorBase);
+    border-radius: 12px 12px 12px 12px;
+    width: 56.9%;
+    margin-top: 40px;
+}
+.especificaciones>h3{
+    margin-left: 50px;
+    font-size: 2rem;
+    color: var(--colorBase);
+    font-family: 'victor-Mono';
+}
+.especificaciones>p{
+    margin-left: 50px;
+    text-align: justify;
+    margin-right: 50px;
+    margin-top: -10px;
+    color: white;
+    font-family: 'Modern';
+    font-size: 1.2rem;
+}
+#infoVendedor{
+    display: inline-block;
+    width: 363px;
+    margin-left: 40px;
+    margin-top: 40px;
+    position: absolute;
+    border-left: 3px solid var(--colorBase);
+    border-radius: 12px 12px 12px 12px;
+}
+#fotoVendedor{
+    border-radius: 50%;
+    width: 120px;
+    margin-top: 40px;
+    margin-left: 33.47%;
+}
+#infoVendedor>h2{
+    color: var(--colorSecundario);
+    font-family: 'Victor-Mono';
+    text-align: center;
+}
+#infoVendedor>h3{
+    color: white;
+    font-family: 'Modern';
+    margin-left: 20px;
+    font-size: 1.5rem;
+    margin-top: -20px;
+}
+#infoVendedor>p{
+    color: white;
+    font-family: 'Modern';
+    margin-left: 20px;
+    text-align: justify;
+    margin-right: 20px;
+}
+/*sugerencias de productos*/
+.sugerencias{
+    border-bottom: 3px solid var(--colorBase);
+    width: 56.9%;
+    height: 500px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 12px 12px 12px 12px;
+}
+.sugerencias>h2{
+    color: var(--colorBase);
+    font-family: 'victor-Mono';
+    font-size: 2rem;
+    margin-left: 50px;
+}
+.contedorProductos{
+    border-radius: 12px;
+    background: #161414;
+    width: 230px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Modern';
+    color: white;
+    margin-left: 61.5px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.contedorProductosDosP{
+    border-radius: 12px;
+    background: #161414;
+    width: 230px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Modern';
+    color: white;
+    margin-left: 353px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 0px;
+    cursor: pointer;
+}
+.contedorProductos>img, .contedorProductosDosP>img{
+    width: 230px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 230px;
+}
+#oculto{
+    display: none;
+    color: var(--colorBase);
+    text-align: left;
+    text-align: justify;    
+    font-size: 14px;
+    margin-top: -50px;
+    margin-left: 10%;
+    width: 75%;
+}
+.contedorProductos:hover>#oculto,.contedorProductosDosP:hover>#oculto,.contedorProductosTres:hover>#oculto{
+    display: block;
+    transition: all 2s;
+}
+/* Registrarse */
+#contenedorRegistro{
+    border: 8px solid var(--colorSecundario);
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 22.5%;
+    width: 55%;
+    background: #121212;
+    height: 1090px;
+    margin-top: 95px;
+    font-family: 'Modern';
+    font-weight: bold;
+    position:absolute; z-index:2;
+    top: 10px;
+    display: none;
+}
+h3{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3rem;
+    color: #00FFF5;
+    font-family: 'Modern';
+}
+.forms{
+    font-size: 2rem;
+    color: white;
+    margin-left: 97px;
+}
+.forms>p>b{
+    font-size: 1.3rem;
+    color:#00FFF5;
+}
+
+.forms>p>b:hover{
+    text-decoration: underline;
+    transition: all 0.5s;
+}
+#contenedorRegistro>.forms>input{
+    border-top: none;
+    border-bottom: 2px solid var(--colorSecundario);
+    border-left: none;
+    border-right: none;
+    height: 35px;
+    font-family: 'Modern';
+    font-size: 1rem;
+    background: none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+input{
+    outline: none;
+}
+#contenedorRegistro>.forms>input::placeholder{
+    color: var(--colorBase);
+}
+#enviarR{
+    margin-left: 550px;
+    color: white;
+    cursor: pointer;
+}
+#enviarR:hover{
+    width: 80px;
+    font-size: 1.3rem;
+}
+#correo{
+    margin-left: 0px;
+}
+#contraseña{
+    margin-left: 0px;
+}
+/*Tipo de cuenta*/
+#contenedorCuenta{
+    border: 8px solid var(--colorSecundario);
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 22.5%;
+    width: 55%;
+    background: #121212;
+    height: 460px;
+    margin-top: 95px;
+    font-family: 'Modern';
+    font-weight: bold;
+    position:absolute; z-index:2;
+    top: 10px;
+    display: none;
+}
+h3{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 3rem;
+    color: #00FFF5;
+    font-family: 'Modern';
+}
+button>img{
+    width: 220px;
+}
+button{
+    background: none;
+    border: 1px solid #121212;
+    border-radius: 10px 10px 10px 10px;
+}
+#admin,#usuario{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+button{
+    margin-left: 0px;
+}
+#admin{
+    margin-left: 70px;
+}
+#imagenIzq{
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+#imagen{
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+}
+#imagenIzq:hover,#imagen:hover{
+    width: 21%;
+}
+#registro>b{
+    cursor: pointer;
+}
