@@ -59,16 +59,21 @@
     <div class="container_sign_in">
         <h2>Registrate</h2>
         <div class="contenedor_form">
-            <form action="" method="POST">
+            <form action="save_register.php" method="POST">
                 <label>Ingresa tus nombres</label><br><input type="text" name="name_sign" id="name_sign" autocomplete="non"><br>
                 <label>Ingresa tus apellidos</label><br><input type="text" name="last_name_sign" id="last_name_sign"><br>
                 <label>Ingresa tu número de identificación</label><br><input type="number" name="id_user_sign" id="id_user_sign"><br>
                 <label>Ingresa tu Correo</label><br><input type="text" name="email_sign" id="email"><br>
-                <label>Ingresa tu dirección</label><br><input type="text" name="" id=""><br>
-                <label>Ingresa tu edad</label><br><input type="number" name="" id=""><br>
+                <label>Ingresa tu dirección</label><br><input type="text" name="address_sign" id=""><br>
+                <label>Ingresa tu edad</label><br><input type="number" name="age_sign" id=""><br>
                 <label>Ingresa tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
                 <label>Repite tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
-                <input type="submit" value="Registrarse" id="sign_btn">
+                <label>Selecciona el tipo de cuenta</label>
+                <select name="select_user" id="select_user">
+                    <option value="admin" name= "admin">Administrador</option>
+                    <option value="user" name = "user">Usuario</option>
+                </select>
+                <input type="submit" value="Registrarse" name = "save_register" id="sign_btn">
             </form>
         </div>
     </div>
