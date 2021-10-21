@@ -9,7 +9,7 @@
     <meta name="keyword" content="Productos Biodegradables,Vender,Comprar,Biodegradable">
     <title>Creactly</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/styleSign.css">
+    <link rel="stylesheet" href="./css/styleNewProduct.css">
     <link rel="shortcut icon" href="./assets/img/Logo.gif" type="image/x-icon">
     <link rel="stylesheet" href="./assets/font/icons/css/uicons-solid-rounded.css">
 </head>
@@ -56,26 +56,51 @@
             </div>
         </nav>
     </header>
-    <div class="container_sign_in">
-        <h2>Registrate</h2>
-        <div class="contenedor_form">
-            <form action="save_register.php" method="POST">
-                <label>Ingresa tus nombres</label><br><input type="text" name="name_sign" id="name_sign" autocomplete="non"><br>
-                <label>Ingresa tus apellidos</label><br><input type="text" name="last_name_sign" id="last_name_sign"><br>
-                <label>Ingresa tu número de identificación</label><br><input type="number" name="id_user_sign" id="id_user_sign"><br>
-                <label>Ingresa tu Correo</label><br><input type="text" name="email_sign" id="email"><br>
-                <label>Ingresa tu dirección</label><br><input type="text" name="address_sign" id=""><br>
-                <label>Ingresa tu edad</label><br><input type="number" name="age_sign" id=""><br>
-                <label>Ingresa tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
-                <label>Repite tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
-                <label>Selecciona el tipo de cuenta</label>
-                <select name="select_user" id="select_user">
-                    <option value="admin" name= "admin">Administrador</option>
-                    <option value="user" name = "user">Usuario</option>
-                </select>
-                <input type="submit" value="Registrarse" name = "save_register" id="sign_btn">
+    <div class="containerNewProducts">
+        <h2>¡¡¡Publica tus productos!!!</h2>
+        <div class="containerson">
+        <div class="imgProducts">
+            <h3 style="text-align: center; font-family: 'Modern Sans'; color: white;">Sube las imagenes de tu producto</h3>
+            <div class="img">
+            <input type="file" name="file_img" id="file_img" required hidden>
+            <button id="upload_file">
+                <i class="fi-sr-cloud-upload"></i>
+                <br><br><br><br>
+                Elegir el archivo
+            </button>
+            <div class="previa_product">
+                <div class="product_img">
+                    <img src="./assets/img/ejemplo.jpg" alt="">
+                    <div class="cancel_product" onclick="">
+                        <i class="fi-sr-cross"></i>
+                    </div>
+                </div>
+                <div class="product_img">
+                </div>
+                <div class="product_img">
+                </div>
+                <div class="product_img">
+                </div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+                <div class="product_img"></div>
+            </div>
+            </div>
+        </div>
+        <div class="infoProduct">
+            <h3>Completa todos los datos</h3>
+            <form action="" method="POST">
+                <input type="text" placeholder="Ingresa el nombre de tu producto" id="name_products" name="name_products" autocomplete="none" required><br>
+                <input type="number" name="price_product" id="price_product" autocomplete="none" placeholder="Ingresa el valor de tu producto" required><br>
+                <textarea name="desc_product" id="desc_product"> Ingresa la descricion de tu producto, ¡¡No te limitess!!</textarea required><br>
+                <input type="submit" value="Publicar" id="send_product">
             </form>
         </div>
+    </div>
     </div>
     <script src="./src/JS/main.js"></script>
 </body>
