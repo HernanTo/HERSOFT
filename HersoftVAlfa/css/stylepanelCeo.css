@@ -1,0 +1,34 @@
+.moduleSeo{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 88.5vh;
+}
+.menu_admin{
+    background: var(--blue_op);
+}
+.menu_seo{
+    margin: 0;
+    padding: 0px;
+
+}
+.menu_admin .menu_seo a{
+    color: white;
+    text-decoration: none;
+}
+.menu_admin .menu_seo a li{
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: 'Victor Mono';
+}
+.menu_admin .menu_seo a li:hover{
+    transform: scale(1.05);
+    border: 2px solid var(--secondary_color);
+    border-radius: 10px;
+}
+.containerSeo{
+    background: #151515;
+}
