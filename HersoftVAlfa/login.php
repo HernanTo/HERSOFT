@@ -14,9 +14,17 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/Logo.gif" alt="logo Creactly"></a>
+    <div class="logo">
+    <div class="circle_white">
+        <div class="circle_white_on">
         </div>
+    </div>
+    <div class="circle_blue">
+        <div class="circle_blue_on">
+    
+        </div>
+    </div>
+    </div>
         <!-- <h1 class="logo-text">Crea<span>ctly</span></h1> -->
         <div class="shortcuts">
             <button class="shortcut_btn">
@@ -50,7 +58,7 @@
     </div>
     <div class="contenedor_login">
         <h2>Iniciar Sesión</h2>
-        <form action="./src/PHP/validar.php" method="POST" id="form_login">
+        <form action="./src/PHP/verify.php" method="POST" id="form_login">
             <input type="email" name="email_login" id="email_login" placeholder="Correo Electronico"><br>
             <!-- <p>Correo no registrado</p> -->
             <input type="password" name="password_login" id="password_login" placeholder="Ingresa tu contraseña"><br>
@@ -61,6 +69,7 @@
                 <a href="">Crear Cuenta</a><br>
                 <button type="submit" name="btn_login">Iniciar Sesión</button>
             </div>
+            <br><br><br>
         </form>
     </div>
     <!-- <div class="container_loaged">

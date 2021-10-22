@@ -131,3 +131,39 @@ a{
         left: 32.5%;
     }
 }
+/* logo */
+.logo{
+    /* background: red; */
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5vw;
+}
+.circle_white, .circle_blue{
+    width: 32px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.circle_blue{
+    border: 2.2px solid #00FFF5;
+    position: absolute;
+    margin-left: 4px;
+}
+.circle_white_on{
+    width: 21px;
+    height: 23px;
+    border: 2.2px solid white;
+    border-radius: 50%;
+}
+.circle_white{
+    border: 2.2px solid white;
+}
+.circle_blue_on{
+    width: 20px;
+    height: 20px;
+    border: 2.2px solid #00FFF5;
+    border-radius: 50%;
+}

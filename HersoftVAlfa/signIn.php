@@ -16,9 +16,17 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/Logo.gif" alt="logo Creactly"></a>
-        </div>
+    <div class="logo">
+ <div class="circle_white">
+     <div class="circle_white_on">
+     </div>
+ </div>
+ <div class="circle_blue">
+     <div class="circle_blue_on">
+ 
+     </div>
+ </div>
+ </div>
         <!-- <h1 class="logo-text">Crea<span>ctly</span></h1> -->
         <div class="shortcuts">
             <button class="shortcut_btn">
@@ -59,11 +67,11 @@
     <div class="container_sign_in">
         <h2>Registrate</h2>
         <div class="contenedor_form">
-            <form action="./src/PHP/save_register.php" method="POST">
+            <form action="./src/PHP/registrer_user.php" method="POST">
                 <label>Ingresa tus nombres</label><br><input type="text" name="name_sign" id="name_sign" autocomplete="non"><br>
                 <label>Ingresa tus apellidos</label><br><input type="text" name="last_name_sign" id="last_name_sign"><br>
                 <label>Ingresa tu número de identificación</label><br><input type="number" name="id_user_sign" id="id_user_sign"><br>
-                <label>Ingresa tu Correo</label><br><input type="text" name="email_sign" id="email"><br>
+                <label>Ingresa tu Correo</label><br><input type="email" name="email_sign" id="email"><br>
                 <label>Ingresa tu dirección</label><br><input type="text" name="address_sign" id=""><br>
                 <label>Ingresa tu edad</label><br><input type="number" name="age_sign" id=""><br>
                 <label>Ingresa tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>

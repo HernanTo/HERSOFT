@@ -32,3 +32,15 @@
 .containerSeo{
     background: #151515;
 }
+.containerSeo h2{
+    font-family: 'Victor Mono';
+    color: var(--main_color);
+    text-align: center;
+    padding-top: 40px;
+}
+table{
+    border: 2px solid white;
+    width: 70%;
+    margin-left: 15%;
+    color: white;
+}
