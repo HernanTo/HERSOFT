@@ -18,7 +18,7 @@
     </div>
     <div class="containerSeo">
         <h2>Datos Usuarios</h2>
-        <table class="table">
+        <table border=1 class="table">
             <tr>
                 <th>ID</th>
                 <th>Nombres</th>
@@ -31,13 +31,13 @@
             <?php
                 foreach ($listaPersonas as $persona){?>
                 <tr>
-                    <!-- <td><?php echo $persona->getId() ?></td> -->
-                    <!-- <td><?php echo $persona->getNombre() ?></td> -->
-                    <!-- <td><?php echo $persona->getEmail() ?></td> -->
-                    <!-- <td><?php echo $persona->getEdad() ?></td> -->
-                    <!-- <td><?php echo $persona->getTypeAccount() ?></td> -->
-                    <!-- <td><a href="#"><i class="fi-sr-pencil"></i></a></td> -->
-                    <!-- <td><a href="#"><i class="fi-sr-trash"></i></a></td> -->
+                    <td><?php echo $persona->getId() ?></td>
+                    <td><?php echo $persona->getNombre() ?></td>
+                    <td><?php echo $persona->getEmail() ?></td>
+                    <td><?php echo $persona->getAge() ?></td>
+                    <td><?php echo $persona->getTypeAccount() ?></td>
+                    <td><a href="#"><i class="fi-sr-pencil"></i></a></td>
+                    <td><a href="#"><i class="fi-sr-trash"></i></a></td>
                 </tr>
             <?php }?>
         </table>

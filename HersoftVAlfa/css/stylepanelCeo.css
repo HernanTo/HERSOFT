@@ -38,9 +38,47 @@
     text-align: center;
     padding-top: 40px;
 }
-table{
-    border: 2px solid white;
+.table{
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Modern Sans';
+    border-radius: 5px;
+    border: 2px solid var(--secondary_color);
+
+}
+.table tr td{
+    border: 2px solid var(--secondary_color);
+    text-align: center;
+    font-family: 'Victor Mono';
+}
+.table tr td a{
+    text-decoration: none;
+}
+.table tr td a i{
+    color: var(--main_color);
+}
+.agregar_user{
+    width: 35%;
+    margin-left: 32.5%;
+    margin-top: 50px;
+    background: #121212;
+    border-radius: 10px;
+    padding: 20px 0px;
+}
+.agregar_user form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    font-family: 'Modern Sans';
     width: 70%;
     margin-left: 15%;
-    color: white;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.agregar_user form input::placeholder{
+    font-weight: bold;
+    color: rgb(223, 202, 202);
 }

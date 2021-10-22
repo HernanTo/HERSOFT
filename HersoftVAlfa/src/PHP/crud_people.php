@@ -16,14 +16,16 @@ require_once('conexion.php');
 		public function mostrar(){
 			$db=Db::conectar();
 			$listaPersona=[];
-			$select=$db->query('SELECT * FROM persona');
+			$select=$db->query('SELECT * FROM users');
             
 			foreach($select->fetchAll() as $persona){
 				$myPersona= new Persona();
-				$myPersona->setId($persona['id_persona']);
-				$myPersona->setNombre($persona['nombre']);
-				$myPersona->setTelefono($persona['telefono']);
-				$myPersona->setDireccion($persona['direccion']);
+				$myPersona->setId($persona['ID_User']);
+				$myPersona->setNombre($persona['Name_user']);
+				// $myPersona->setTelefono($persona['']);
+				$myPersona->setEmail($persona['Email']);
+				$myPersona->setTypeAccount($persona['account_type']);	
+				$myPersona->setAge($persona['Age']);	
 				$listaPersona[]=$myPersona;
 			}
 			return $listaPersona;
@@ -46,7 +48,8 @@ require_once('conexion.php');
 			$myPersona->setId($persona['id_persona']);
 			$myPersona->setNombre($persona['nombre']);
 			$myPersona->setTelefono($persona['telefono']);
-			$myPersona->setDireccion($persona['direccion']);
+			$myPersona->setEmail($persona['email']);
+			$myPersona->setTypeAccount($persona['tipo de cuenta']);
 			return $myPersona;
 		}
         //actualizar User
