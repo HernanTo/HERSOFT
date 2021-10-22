@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 22-10-2021 a las 00:35:08
--- Versión del servidor: 10.4.19-MariaDB
--- Versión de PHP: 8.0.7
+-- Servidor: localhost
+-- Tiempo de generación: 22-10-2021 a las 13:31:30
+-- Versión del servidor: 10.4.20-MariaDB
+-- Versión de PHP: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -100,14 +100,23 @@ CREATE TABLE `suggestion` (
 
 CREATE TABLE `users` (
   `ID_User` int(11) NOT NULL,
-  `Name` varchar(100) DEFAULT NULL,
+  `Name_user` varchar(100) DEFAULT NULL,
   `Last_name` varchar(100) DEFAULT NULL,
   `User_password` varchar(15) DEFAULT NULL,
-  `Emali` varchar(100) DEFAULT NULL,
-  `Address` varchar(100) DEFAULT NULL,
+  `Email` varchar(100) DEFAULT NULL,
+  `Address_user` varchar(100) DEFAULT NULL,
   `Age` int(11) DEFAULT NULL,
   `account_type` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`ID_User`, `Name_user`, `Last_name`, `User_password`, `Email`, `Address_user`, `Age`, `account_type`) VALUES
+(1, 'Santiago', 'Tamayo', 'tamaGoat', 'santiElMejor@gmail.com', 'jsjs', 17, 'user'),
+(92849201, 'Andrés', 'Flores', '90284', 'andres@gmail.com', 'casita', 16, 'seo'),
+(1022330332, 'Hernán', 'Torres', '2345', 'hetoro1703@gmail.com', 'krak 90', 30, 'user');
 
 --
 -- Índices para tablas volcadas
