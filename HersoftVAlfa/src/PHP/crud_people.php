@@ -1,16 +1,20 @@
 <?php
 require_once('conexion.php');
+// require_once('people.php');
 	class CrudPersona{
 		public function __construct(){}
         // crud insertar
 		public function insertar($persona){
 			$db=Db::conectar();
-			$insert=$db->prepare("INSERT INTO `users`(`ID_User`, `Name_user`, `Last_name`, `User_password`, `Email`, `Address_user`, `Age`, `account_type`) VALUES ('','','','','','','','')");
+			$insert=$db->prepare("INSERT INTO users VALUES (:id,:nombre,:lastName,:password, :email , :address,:age,'seo')");
+			$insert->bindValue('id',$persona->getId());
 			$insert->bindValue('nombre',$persona->getNombre());
-			$insert->bindValue('direccion',$persona->getDireccion());
-			$insert->bindValue('direccion',$persona->getDireccion());
+			$insert->bindValue('LastName',$persona->getLastName());
+			$insert->bindValue('password',$persona->getPassword());
+			$insert->bindValue('email', $persona->getEmail());
+			$insert->bindValue('address',$persona->getAddress());
+			$insert->bindValue('Age',$persona->getAge());
 			$insert->execute();
- 
 		}
         //crud trarerUser
 		public function mostrar(){
@@ -47,7 +51,7 @@ require_once('conexion.php');
 			$myPersona= new Persona();
 			$myPersona->setId($persona['id_persona']);
 			$myPersona->setNombre($persona['nombre']);
-			$myPersona->setTelefono($persona['telefono']);
+			// $myPersona->setTelefono($persona['telefono']);
 			$myPersona->setEmail($persona['email']);
 			$myPersona->setTypeAccount($persona['tipo de cuenta']);
 			return $myPersona;

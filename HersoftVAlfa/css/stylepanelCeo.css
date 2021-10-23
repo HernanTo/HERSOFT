@@ -82,3 +82,6 @@
     font-weight: bold;
     color: rgb(223, 202, 202);
 }
+.fi-sr-trash:hover{
+    color: red;
+}
