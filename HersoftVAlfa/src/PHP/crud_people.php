@@ -5,9 +5,9 @@ require_once('conexion.php');
         // crud insertar
 		public function insertar($persona){
 			$db=Db::conectar();
-			$insert=$db->prepare('INSERT INTO persona values(NULL,:nombre,:telefono,:direccion)');
+			$insert=$db->prepare("INSERT INTO `users`(`ID_User`, `Name_user`, `Last_name`, `User_password`, `Email`, `Address_user`, `Age`, `account_type`) VALUES ('','','','','','','','')");
 			$insert->bindValue('nombre',$persona->getNombre());
-			$insert->bindValue('telefono',$persona->getTelefono());
+			$insert->bindValue('direccion',$persona->getDireccion());
 			$insert->bindValue('direccion',$persona->getDireccion());
 			$insert->execute();
  
