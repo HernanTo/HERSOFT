@@ -10,18 +10,50 @@
     <title>Document</title>
 </head>
 <body>
-    <br><br>
+    <br><br><br><br><br>
 <div class="contenedor_categorias_index">
-      <a href="" class="hot_products">uwu</a>
-      <a href="" class="products_inn">uwu</a>
-      <a href="" class="products_ofert">uwu</a>
-      <a href="" class="all_products">uwu</a>
+      <a href="" class="hot_products">
+      <img src="./assets/img/icons_png/hot_products.png" alt="">
+        <h2>
+          Productos
+          <br>
+          populares
+        </h2>
+      </a>
+      </a>
+      <a href="" class="products_inn">
+      <img src="./assets/img/icons_png/Product_inn.png" alt="">
+        <h2>
+          Productos
+          <br>
+          novedosos
+        </h2>
+      </a>
+      </a>
+      <a href="" class="products_ofert">
+      <img src="./assets/img/icons_png/products_ofert.png" alt="">
+        <h2>
+          Productos
+          <br>
+          en oferta
+        </h2>
+      </a>
+      </a>
+      <a href="" class="all_products">
+      <img src="./assets/img/icons_png/All_products.png" alt="">
+        <h2>
+          Todos nuestros
+          <br>
+          productos
+        </h2>
+      </a>
+      </a>
       <a href="" class="best_products">
         <img src="./assets/img/icons_png/icon.png" alt="">
         <h2>
           Mejores
           <br>
-          Productos
+          productos
         </h2>
       </a>
       <a href="" class="hallowen_products">
