@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once('./src/PHP/crud_people.php');
     require_once('./src/PHP/people.php');     
     $crud= new CrudPersona();

@@ -1,8 +1,10 @@
 <?php
     include("database.php");
+    session_start();
     // variables datos login
     $email_user_login = trim($_POST['email_login']);
     $password_user_login = trim($_POST['password_login']);
+    $_SESSION['usuario'] = $email_user_login;
     if($email_user_login == '' or $password_user_login == null){
         // pop up
         echo "<script>alert('Error: usuario y/o clave vacios!!');</script>";
