@@ -19,7 +19,7 @@ body{
     background: transparent;
 }
 ::-webkit-scrollbar-thumb{
-    background: linear-gradient(30deg,#da1c45,#00FFF5);
+    background: linear-gradient(30deg,#da1c45, rgba(17, 32, 49, 0.8));
     border-radius: 10px;
     height: 50vh;
 }

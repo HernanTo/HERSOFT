@@ -13,7 +13,7 @@
     text-decoration: none;
 }
 .contenedor_categorias_index a:hover{
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 .products_ofert{
     grid-column: 1 / span 5;
