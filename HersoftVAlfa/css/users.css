@@ -1,0 +1,97 @@
+:root{
+    --background: #121212;
+	--main_color: #00FFF5;
+	--secondary_color: #da1c45;
+	--white_op: rgb(246, 246, 246,0.7);
+	--blue_op: rgba(17, 32, 49, 0.8);
+}
+@font-face {
+    font-family: 'Modern Sans';
+    src: url(../assets/font/font_text/ModernSans-Light.otf);
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(../assets/font/font_text/VictorMono-Bold.ttf);
+}
+@font-face {
+    font-family: 'Monospace';
+    src: url(../assets/font/font_text/MonospaceTypewriter.ttf);
+}
+.container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.container_data{
+    padding: 5%;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1 / span 2;
+}
+#upload_password:hover{
+    font-weight: bold;
+}
+#upload_photo{
+    margin-left: 25px;
+    border: none;
+    width: 9vw;
+    height: 18vh;
+    background: url('.././assets/img/user.png') no-repeat;
+    background-position-x: ;
+
+}
+#email_users, #name_users, #upload_password{
+    padding: 2px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Modern Sans';
+}
+.history_container{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column:  3 / span 2;
+}
+#history{
+    border:  solid 1px var(--main_color);
+    width: 65vw;
+    border-radius: 10px;
+}
+#history img{
+    border-right: 1px solid var(--main_color);
+    width: 15vw;
+    height: 30vh;
+}
+#history h2{
+    text-align: left;
+    margin-left: 290px;
+    font-size: 25px;
+    margin-top: -230px;
+}
+.description_history{
+    color: white;
+    margin-left: 260px;
+    margin-top: -50px;
+    padding: 30px;
+    font-family: 'Monospace';
+    font-size: 15px;
+}
+.history_container h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Victor Mono';
+    color: var(--secondary_color);
+}
+hr{
+    border: none;
+    background: linear-gradient(45deg, #e48da0, #da1c45);
+    box-shadow: 1px 1px 10px 1px var(--secondary_color);
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.4vh;
+    width: 60vw;
+}
