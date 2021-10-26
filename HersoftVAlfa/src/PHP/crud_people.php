@@ -6,13 +6,13 @@ require_once('conexion.php');
         // crud insertar
 		public function insertar($persona){
 			$db=Db::conectar();
-			$insert=$db->prepare("INSERT INTO users VALUES (:id,:nombre,:lastName,:password, :email , :address,:age,'seo')");
+			$insert=$db->prepare("INSERT INTO users VALUES (:id,:nombre,:lastName,:passwords, :email , :addraess,:age,'seo')");
 			$insert->bindValue('id',$persona->getId());
 			$insert->bindValue('nombre',$persona->getNombre());
 			$insert->bindValue('LastName',$persona->getLastName());
-			$insert->bindValue('password',$persona->getPassword());
+			$insert->bindValue('passwords',$persona->getPassword());
 			$insert->bindValue('email', $persona->getEmail());
-			$insert->bindValue('address',$persona->getAddress());
+			$insert->bindValue('addraess',$persona->getAddress());
 			$insert->bindValue('Age',$persona->getAge());
 			$insert->execute();
 		}
@@ -37,7 +37,7 @@ require_once('conexion.php');
         //eliminar user
 		public function eliminar($id){
 			$db=Db::conectar();
-			$eliminar=$db->prepare('DELETE FROM persona WHERE id_persona=:id');
+			$eliminar=$db->prepare('DELETE FROM users WHERE ID_User=:id');
 			$eliminar->bindValue('id',$id);
 			$eliminar->execute();
 		}
@@ -59,11 +59,11 @@ require_once('conexion.php');
         //actualizar User
 		public function actualizar($persona){
 			$db=Db::conectar();
-			$actualizar=$db->prepare('UPDATE persona SET nombre=:nomb, telefono=:tel,direccion=:dir  WHERE id_persona=:id');
+			$actualizar=$db->prepare('UPDATE users SET Name_User=:nomb, Last_Name=:lastName ,direccion=:dir  WHERE ID_User=:id');
 			$actualizar->bindValue('id',$persona->getId());
 			$actualizar->bindValue('nomb',$persona->getNombre());
-			$actualizar->bindValue('tel',$persona->getTelefono());
-			$actualizar->bindValue('dir',$persona->getDireccion());
+			$actualizar->bindValue('lastName',$persona->getLastName());
+			$actualizar->bindValue('dir',$persona->getAddress());
 			$actualizar->execute();
 		}
 	}

@@ -40,18 +40,23 @@ let b = document.getElementById("b");
 let c = document.getElementById("c");
 let d = document.getElementById("d");
 let eI = document.getElementById("eI");
+let f = document.getElementById("f");
+
 // variables letras menu seo
 let a = document.getElementById("a");
 let e = document.getElementById("e");
 let i = document.getElementById("i");
 let o = document.getElementById("o");
 let u = document.getElementById("u");
+let us = document.getElementById("us");
 //  estados menu
 let aOnOrFalse = false;
 let eOnOrFalse = false;
 let iOnOrFalse = false;
 let oOnOrFalse = false;
 let uOnOrFalse = false;
+let usOnOrFalse = false;
+
 function hoverA() {
   if (aOnOrFalse === false) {
     aOnOrFalse = true;
@@ -94,6 +99,15 @@ function hoverE(){
     eI.style.marginRight = "0px";
   }else if (uOnOrFalse === true){
     uOnOrFalse = false;
+    eI.style.marginRight = "18vw";
+  }
+}
+function hoverF(){
+  if (usOnOrFalse === false){
+    usOnOrFalse = true;
+    eI.style.marginRight = "0px";
+  }else if (usOnOrFalse === true){
+    usOnOrFalse = false;
     eI.style.marginRight = "18vw";
   }
 }

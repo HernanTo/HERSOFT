@@ -6,13 +6,13 @@ $crud = new CrudPersona();
 $persona = new Persona();
  
 	if (isset($_POST['insertar'])) {
-        $persona->setId($_POST['id_registrer_seo']);
-		$persona->setNombre($_POST['name_registrer_seo']);
-        $persona->setEmail($_POST['email_registrer_seo']);
-        $persona->setAddress($_POST['adreess_registrer_seo']);
-        $persona->setAge($_POST['age_registrer_seo']);
-        $persona->setLastName($_POST['last_registrer_seo']);
-        $persona -> setPassword($_POST['password_registrer_seo']);
+        $persona->setId($_POST['idregistrerseo']);
+		$persona->setNombre($_POST['nameregistrerseo']);
+        $persona->setEmail($_POST['emailregistrerseo']);
+        $persona->setAddress($_POST['adreessregistrerseo']);
+        $persona->setAge($_POST['ageregistrerseo']);
+        $persona->setLastName($_POST['lastregistrerseo']);
+        $persona -> setPassword($_POST['passwordregistrerseo']);
 		$crud->insertar($persona);
 		header('Location: location:../../panelCeo.php');
 	}elseif(isset($_POST['actualizar'])){
@@ -26,10 +26,10 @@ $persona = new Persona();
 		$crud->actualizar($persona);
 		header('Location: location:../../queryUser.php');
     }
-	elseif ($_GET['accion']=='e') {
+	elseif ($_GET['accion']=='borrar') {
 		$crud->eliminar($_GET['id']);
-		header('Location: index.php');		
-	}elseif($_GET['accion']=='a'){
+		header('Location: ../../queryUser.php');		
+	}elseif($_GET['accion']=='editar'){
 		header('Location: actualizar.php');
 	}
 ?>

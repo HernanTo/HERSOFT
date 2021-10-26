@@ -1,5 +1,10 @@
 <?php
-    session_start();
+    // session_start();
+    // if($_SESSION['usuario'] == null || $_SESSION['usuario'] = ''){
+    //     echo '<script>alert("Usted no tiene autorización para acceder")</script>';
+    //     header("Location: ../../index.html");
+    //     die();
+    // }
     require_once('./src/PHP/crud_people.php');
     require_once('./src/PHP/people.php');     
     $crud= new CrudPersona();
@@ -8,15 +13,7 @@
     include('./src/incluedes/header.php');
 ?>
 <div class="moduleSeo">
-    <div class="menu_admin">
-        <nav class="nav_panel">
-            <ul class="menu_seo">
-                <a href="registroSeo.php"><li>Agregar Usuarios</li></a>
-                <a href="QueryUser.php"><li>Ver,Modificar usuarios</li></a>
-                <a href="#"><li>Ver,Modificar productos</li></a>
-            </ul>
-        </nav>
-    </div>
+    <?php include("./src/incluedes/menu_slide.php"); ?>
     <div class="containerSeo">
         <h2>Datos Usuarios</h2>
         <table border=1 class="table">
@@ -37,10 +34,13 @@
                     <td><?php echo $persona->getEmail() ?></td>
                     <td><?php echo $persona->getAge() ?></td>
                     <td><?php echo $persona->getTypeAccount() ?></td>
-                    <td><a href="#"><i class="fi-sr-pencil"></i></a></td>
-                    <td><a href="#"><i class="fi-sr-trash"></i></a></td>
+                    <td><a href="actualizar.phpadministrar_persona.php?id=<?php echo $persona->getId()?>&accion=actualizar"><i class="fi-sr-pencil"></i></a></td>
+                    <td><a href="./src/PHP/administrar_persona.php?id=<?php echo $persona->getId()?>&accion=borrar"><i class="fi-sr-trash"></i></a></td>
                 </tr>
             <?php }?>
         </table>
     </div>
 </div>
+<?php
+    include("./src/incluedes/footer.php")
+?>
