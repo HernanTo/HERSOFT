@@ -3,19 +3,6 @@ require_once('conexion.php');
 // require_once('people.php');
 	class CrudPersona{
 		public function __construct(){}
-        // crud insertar
-		public function insertar($persona){
-			$db=Db::conectar();
-			$insert=$db->prepare("INSERT INTO users VALUES (:id,:nombre,:lastName,:passwords, :email , :addraess,:age,'seo')");
-			$insert->bindValue('id',$persona->getId());
-			$insert->bindValue('nombre',$persona->getNombre());
-			$insert->bindValue('LastName',$persona->getLastName());
-			$insert->bindValue('passwords',$persona->getPassword());
-			$insert->bindValue('email', $persona->getEmail());
-			$insert->bindValue('addraess',$persona->getAddress());
-			$insert->bindValue('Age',$persona->getAge());
-			$insert->execute();
-		}
         //crud trarerUser
 		public function mostrar(){
 			$db=Db::conectar();
@@ -44,22 +31,22 @@ require_once('conexion.php');
         // trarer un user
 		public function obtenerPersona($id){
 			$db=Db::conectar();
-			$select=$db->prepare('SELECT * FROM persona WHERE id_persona=:id');
+			$select=$db->prepare('SELECT * FROM users WHERE ID_User=:id');
 			$select->bindValue('id',$id);
 			$select->execute();
 			$persona=$select->fetch();
 			$myPersona= new Persona();
-			$myPersona->setId($persona['id_persona']);
-			$myPersona->setNombre($persona['nombre']);
-			// $myPersona->setTelefono($persona['telefono']);
-			$myPersona->setEmail($persona['email']);
-			$myPersona->setTypeAccount($persona['tipo de cuenta']);
+			$myPersona->setId($persona['ID_User']);
+			$myPersona->setNombre($persona['Name_user']);
+			$myPersona->setNombre($persona['Last_name']);
+			$myPersona->setEmail($persona['Email']);
+			$myPersona->setTypeAccount($persona['account_type']);
 			return $myPersona;
 		}
         //actualizar User
 		public function actualizar($persona){
 			$db=Db::conectar();
-			$actualizar=$db->prepare('UPDATE users SET Name_User=:nomb, Last_Name=:lastName ,direccion=:dir  WHERE ID_User=:id');
+			$actualizar=$db->prepare('UPDATE users SET Name_User=:nomb, Last_Name=:lastName , Address_user=:dir  WHERE ID_User=:id');
 			$actualizar->bindValue('id',$persona->getId());
 			$actualizar->bindValue('nomb',$persona->getNombre());
 			$actualizar->bindValue('lastName',$persona->getLastName());
@@ -67,4 +54,3 @@ require_once('conexion.php');
 			$actualizar->execute();
 		}
 	}
-?>

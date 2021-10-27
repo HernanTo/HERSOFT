@@ -95,7 +95,6 @@
     width: 35%;
     margin-left: 32.5%;
     margin-top: 50px;
-    background: #121212;
     border-radius: 10px;
     padding: 20px 0px;
 }
@@ -104,7 +103,6 @@
     outline: none;
     border-bottom: 2px solid white;
     background: none;
-    color: white;
     font-family: 'Modern Sans';
     width: 70%;
     margin-left: 15%;
@@ -120,4 +118,8 @@
 }
 footer{
     display: none;
+}
+.modificarUser{
+    width: 50%;
+    background: red;
 }

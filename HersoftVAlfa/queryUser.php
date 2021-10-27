@@ -34,7 +34,7 @@
                     <td><?php echo $persona->getEmail() ?></td>
                     <td><?php echo $persona->getAge() ?></td>
                     <td><?php echo $persona->getTypeAccount() ?></td>
-                    <td><a href="actualizar.phpadministrar_persona.php?id=<?php echo $persona->getId()?>&accion=actualizar"><i class="fi-sr-pencil"></i></a></td>
+                    <td><a href="./actualizar.php?id=<?php echo $persona->getId()?>&accion=editar"><i class="fi-sr-pencil"></i></a></td>
                     <td><a href="./src/PHP/administrar_persona.php?id=<?php echo $persona->getId()?>&accion=borrar"><i class="fi-sr-trash"></i></a></td>
                 </tr>
             <?php }?>
