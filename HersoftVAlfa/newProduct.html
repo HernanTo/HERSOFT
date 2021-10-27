@@ -54,14 +54,14 @@
         <div class="imgProducts">
             <h3 style="text-align: center; font-family: 'Modern Sans'; color: white;">Sube las imagenes de tu producto</h3>
             <div class="img">
-            <input type="file" name="file_img" id="file_img" required>
+            <input type="hidden" name="imagen" id="file_img"  hidden>
             <button id="upload_file" type="hidden">
                 <i class="fi-sr-cloud-upload"></i>
                 <br><br><br><br>
                 Elegir el archivo
             </button>
             <div class="previa_product">
-                <div class="product_img">
+                <div id="product_img" onclick="eliminar();">
                     <img src="./assets/img/ejemplo.jpg" alt="">
                     <div class="cancel_product" onclick="">
                         <i class="fi-sr-cross"></i>
@@ -72,11 +72,13 @@
         </div>
         <div class="infoProduct">
             <h3>Completa todos los datos</h3>
-            <form action="" method="POST">
+            <form action="./src/PHP/products/add_product.php" method="POST">
                 <input type="text" placeholder="Ingresa el nombre de tu producto" id="name_products" name="name_products" autocomplete="none" required><br>
                 <input type="number" name="price_product" id="price_product" autocomplete="none" placeholder="Ingresa el valor de tu producto" required><br>
                 <textarea name="desc_product" id="desc_product"> Ingresa la descricion de tu producto, ¡¡No te limitess!!</textarea required><br>
-                    <label>Elige la categoria que se acomode a tu producto</label><select name="category" id="category">
+                    <label style="color: while; font-family: 'Modern Sans; font-size: 1.4rem;margin-left: 10px;">Elige la categoria que se acomode a tu producto</label>
+                    <br>
+                    <select name="category" id="category" style="background: #da1c45;">
                         <option value="hallowen_product">Productos de Hallowen</option>
                         <option value="decorative_product">Productos decorativos</option>
                         <option value="technological_product">Productos tecnológicos</option>
@@ -84,7 +86,7 @@
                         <option value="gamer_product">Productos gamer</option>
                         <option value="accesories">Accesorios</option>
                     </select><br>
-                <input type="submit" value="Publicar" id="send_product">
+                <input type="submit" value="Publicar" id="send_product" name="send_product">
             </form>
         </div>
     </div>

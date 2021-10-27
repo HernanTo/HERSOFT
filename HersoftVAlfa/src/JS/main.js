@@ -111,3 +111,8 @@ function hoverF(){
     eI.style.marginRight = "18vw";
   }
 }
+
+let previa = getElementById('product_img');
+function eliminar(){
+  previa.style.display = 'none';
+}
