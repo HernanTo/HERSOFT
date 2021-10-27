@@ -1,0 +1,75 @@
+:root{
+    --background: #121212;
+	--main_color: #00FFF5;
+	--secondary_color: #da1c45;
+	--white_op: rgb(246, 246, 246,0.7);
+	--blue_op: rgba(17, 32, 49, 0.8);
+}
+@font-face {
+    font-family: 'Modern Sans';
+    src: url(../assets/font/font_text/ModernSans-Light.otf);
+}
+@font-face {
+    font-family: 'Victor Mono';
+    src: url(../assets/font/font_text/VictorMono-Bold.ttf);
+}
+@font-face {
+    font-family: 'Monospace';
+    src: url(../assets/font/font_text/MonospaceTypewriter.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+height: 100vh;
+}
+.container_questions_general{
+    margin: auto;
+    margin-top: 30px;
+    width: 70vw;
+}
+.container_questions_general h1{
+    font-size: 40px;
+    margin-left: -40px;
+    color: var(--secondary_color);
+    font-family: 'Victor Mono';
+}
+section p {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    font-family: 'Modern Sans';
+    background: #151515;
+    color: white;
+    height: 10vh;
+    transition: all 0.2s ease-in;
+}
+section a {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border:1px solid var(--blue_op);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 15px;
+    height:  10vh;
+    font-size: 20px;
+    font-family: 'Victor Mono';
+    background-color: var(--blue_op);
+    color: white;
+}
+section:target p {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border:1px solid var(--blue_op);
+    max-height: 120px;
+    padding: 10px;
+}
+a:hover{
+    background-color: #112031;
+    border: none;
+    box-shadow: 0px 0px 20px 0px #112031 ;
+    cursor: pointer;
+}

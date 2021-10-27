@@ -11,7 +11,7 @@
 <body>
     <br><br><br><br><br>
 <div class="contenedor_categorias_index">
-      <a href="" class="hot_products">
+      <a href="products_decorative.php" class="hot_products">
       <img src="./assets/img/icons_png/decorative_products.png" alt="">
         <h2>
           Productos
@@ -20,7 +20,7 @@
         </h2>
       </a>
       </a>
-      <a href="" class="products_inn">
+      <a href="products_technological.php" class="products_inn">
       <img src="./assets/img/icons_png/technological_products.png" alt="">
         <h2>
           Productos
@@ -29,7 +29,7 @@
         </h2>
       </a>
       </a>
-      <a href="" class="products_ofert">
+      <a href="products_gamer.php" class="products_ofert">
       <img src="./assets/img/icons_png/gamer_product.png" alt="">
         <h2>
           Productos
@@ -38,14 +38,14 @@
         </h2>
       </a>
       </a>
-      <a href="" class="all_products">
+      <a href="accesories.php" class="all_products">
       <img src="./assets/img/icons_png/accesorie_product.png" alt="">
         <h2>
           Accesorios
         </h2>
       </a>
       </a>
-      <a href="" class="best_products">
+      <a href="products_sport.php" class="best_products">
         <img src="./assets/img/icons_png/sport_products.png"  alt="">
         <h2>
           Productos 
@@ -53,7 +53,7 @@
           Deportivos
         </h2>
       </a>
-      <a href="" class="hallowen_products">
+      <a href="products_halloween.php" class="hallowen_products">
         <img src="./assets/img/icons_png/icon_halloween.png" alt="">
         <h2>
           Productos 
@@ -65,5 +65,4 @@
     <script src= './src/JS/main.js'></script>
 </body>
 </html>
-
 <?php include("./src/incluedes/footer.php") ?>
