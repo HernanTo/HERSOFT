@@ -12,47 +12,45 @@
     <br><br><br><br><br>
 <div class="contenedor_categorias_index">
       <a href="" class="hot_products">
-      <img src="./assets/img/icons_png/hot_products.png" alt="">
+      <img src="./assets/img/icons_png/decorative_products.png" alt="">
         <h2>
           Productos
           <br>
-          populares
+          Decorativos 
         </h2>
       </a>
       </a>
       <a href="" class="products_inn">
-      <img src="./assets/img/icons_png/Product_inn.png" alt="">
+      <img src="./assets/img/icons_png/technological_products.png" alt="">
         <h2>
           Productos
           <br>
-          novedosos
+          Tecnológicos
         </h2>
       </a>
       </a>
       <a href="" class="products_ofert">
-      <img src="./assets/img/icons_png/products_ofert.png" alt="">
+      <img src="./assets/img/icons_png/gamer_product.png" alt="">
         <h2>
           Productos
           <br>
-          en oferta
+          Gamer
         </h2>
       </a>
       </a>
       <a href="" class="all_products">
-      <img src="./assets/img/icons_png/All_products.png" alt="">
+      <img src="./assets/img/icons_png/accesorie_product.png" alt="">
         <h2>
-          Todos nuestros
-          <br>
-          productos
+          Accesorios
         </h2>
       </a>
       </a>
       <a href="" class="best_products">
-        <img src="./assets/img/icons_png/icon.png" alt="">
+        <img src="./assets/img/icons_png/sport_products.png"  alt="">
         <h2>
-          Mejores
+          Productos 
           <br>
-          productos
+          Deportivos
         </h2>
       </a>
       <a href="" class="hallowen_products">

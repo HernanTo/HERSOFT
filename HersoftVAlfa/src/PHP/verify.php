@@ -7,7 +7,7 @@
     $_SESSION['usuario'] = $email_user_login;
     if($email_user_login == '' or $password_user_login == null){
         // pop up
-        echo "<script>alert('Error: usuario y/o clave vacios!!');</script>";
+        echo "<script>alert('Conexión exitosa)(Error: usuario y/o clave vacios!!');</script>";
     }else{
         $sql = "SELECT * FROM `users` WHERE Email = '$email_user_login' AND User_password = '$password_user_login' AND  account_type = 'user'";
         if(!$query_sql = $conection -> query($sql)){

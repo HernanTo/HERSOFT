@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 22-10-2021 a las 13:31:30
+-- Tiempo de generación: 26-10-2021 a las 23:19:56
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 7.3.29
 
@@ -114,7 +114,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID_User`, `Name_user`, `Last_name`, `User_password`, `Email`, `Address_user`, `Age`, `account_type`) VALUES
-(1, 'Santiago', 'Tamayo', 'tamaGoat', 'santiElMejor@gmail.com', 'jsjs', 17, 'user'),
 (92849201, 'Andrés', 'Flores', '90284', 'andres@gmail.com', 'casita', 16, 'seo'),
 (1022330332, 'Hernán', 'Torres', '2345', 'hetoro1703@gmail.com', 'krak 90', 30, 'user');
 

@@ -38,8 +38,8 @@
     border: none;
     width: 9vw;
     height: 18vh;
-    background: url('.././assets/img/user.png') no-repeat;
-    background-position-x: ;
+    background:  var(--blue_op);
+
 
 }
 #email_users, #name_users, #upload_password{
