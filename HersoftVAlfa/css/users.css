@@ -30,7 +30,7 @@
     margin-right: auto;
     grid-column: 1 / span 2;
 }
-#upload_password:hover{
+#upload_password:hover, #pS:hover,#tS:hover {
     font-weight: bold;
 }
 #upload_photo{
@@ -43,7 +43,7 @@
 
 
 }
-#email_users, #name_users, #upload_password{
+#email_users, #name_users, #upload_password, .container_data a{
     padding: 2px;
     border-radius: 10px;
     font-size: 20px;

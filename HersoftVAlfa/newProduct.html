@@ -27,7 +27,7 @@
             <i class="fi-sr-shopping-cart"></i>
             <i class="fi-sr-cross-circle cross_car"></i>
           </button>
-          <button class="shortcut_btn">
+          <button class="shortcut_btn" onclick="openCloseMenuUser()">
             <i class="fi-sr-user"></i>
             <i class="fi-sr-cross-circle cross_user"></i>
           </button>
@@ -46,6 +46,13 @@
             <a href="./signIn.php" class="sign_in_btn" style="display: none;"><li>Registrate</li></a>
             <a href="./login.php" class="login_up_btn" style="display: none;"><li>Iniciar Sesión</li></a>
           </ul>
+        </nav>
+        <nav id="user_menu">
+          <div id="login">
+            <div></div>
+            <a href="users.php"><li>Hernan Torres</li></a>
+            <a href="./src/PHP/cerrar_sesion.php"><li>Cerrar Sesión</li></a>
+          </div>
         </nav>
       </header>
     <div class="containerNewProducts">

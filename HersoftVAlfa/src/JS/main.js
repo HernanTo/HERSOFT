@@ -112,7 +112,25 @@ function hoverF(){
   }
 }
 
-let previa = getElementById('product_img');
+let previa = document.getElementById('product_img');
 function eliminar(){
   previa.style.display = 'none';
+}
+var menuUser = document.getElementById("user_menu");
+var menuUserIcon = document.getElementById("menu_user");
+var crossUser = document.getElementById("cross_user");
+// Estados
+let menuUserOn = false;
+function openCloseMenuUser (){  
+  if(menuUserOn ===  false){
+    menuUserOn = true;
+    menuUser.style.transform = 'translateX(0px)';
+    menuUserIcon.style.fontSize = '0px';
+    crossUser.style.fontSize = '1.6rem';
+  }else if(menuUserOn === true){
+    menuUserOn = false;
+    menuUser.style.transform = 'translateX(150%)';
+    menuUserIcon.style.fontSize = '1.6rem';
+    crossUser.style.fontSize = '0px';
+  }
 }

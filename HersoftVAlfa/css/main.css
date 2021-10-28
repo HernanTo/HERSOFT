@@ -303,3 +303,34 @@ footer h2{
 .buscador_index form input:hover{
     width: 20%;
 }
+/* ** Menu Usuaurio */
+#user_menu{
+    position: absolute;
+    background: var(--blue_op);
+    width: 20vw;
+    height: 230px;
+    display: grid;
+    margin-top: 12vh;
+    right: 0px;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translateX(150%);
+    transition: 0.6s;
+}
+#user_menu a{
+    color: white;
+    text-decoration: none;
+}
+#user_menu #login div{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 90px;  
+    background: red;
+    border-radius: 50%;
+}
+#user_menu a li{
+    list-style: none;
+    font-family: 'Victor Mono';
+    margin-bottom: 10px;
+}

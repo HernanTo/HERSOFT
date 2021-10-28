@@ -52,4 +52,11 @@
           <a href="./login.php" class="login_up_btn" style="display: none;"><li>Iniciar Sesión</li></a>
         </ul>
       </nav>
+      <nav id="user_menu">
+        <div id="login">
+          <div></div>
+          <a href="users.php"><li>Hernan Torres</li></a>
+          <a href="./src/PHP/cerrar_sesion.php"><li>Cerrar Sesión</li></a>
+        </div>
+      </nav>
     </header>

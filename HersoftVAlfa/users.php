@@ -1,4 +1,6 @@
-<?php include("./src/incluedes/header.php") ?>
+<?php include("./src/incluedes/header.php");
+    $typeAccount = true;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +21,14 @@
         <p id = "email_users">User@gmail.com</p>
         <p id = "name_users">Name of the user</p>
         <a href="#" id = "upload_password">Actualizar contraseña</a>
+        <br> <br><br><br><br><br><br>
+        <center>
+        <?php
+            if($typeAccount){
+                echo'<a href="./newProduct.html" id="pS">Publicar Producto</a><br> <br><a href="./newProduct.html" id="tS">Todos mis productos</a>';
+            }
+        ?>
+        </center>
     </div> 
     <div class="history_container">
         <h2>Historial de compras</h2>

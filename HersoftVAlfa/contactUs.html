@@ -25,7 +25,7 @@
             <i class="fi-sr-shopping-cart"></i>
             <i class="fi-sr-cross-circle cross_car"></i>
           </button>
-          <button class="shortcut_btn">
+          <button class="shortcut_btn" onclick="openCloseMenuUser()">
             <i class="fi-sr-user"></i>
             <i class="fi-sr-cross-circle cross_user"></i>
           </button>
@@ -45,20 +45,27 @@
             <a href="./login.php" class="login_up_btn" style="display: none;"><li>Iniciar Sesión</li></a>
           </ul>
         </nav>
+        <nav id="user_menu">
+          <div id="login">
+            <div></div>
+            <a href="users.php"><li>Hernan Torres</li></a>
+            <a href="./src/PHP/cerrar_sesion.php"><li>Cerrar Sesión</li></a>
+          </div>
+        </nav>
       </header>
     
     <div class="container">  <!--Contenedor de la página-->
-
+      <form action="./src/PHP/contactoPhp/registrer_message.php" method="POST">
         <div class="container_form"> <!--Contenedor del formulario-->
 
             <div class="fields_container"> <!--Contenedor de los campos de respuesta del formulario-->
 
                 <h1>Contáctanos</h1>
                     <div id="nick_name">
-                        <label>Ninckname</label><br><br><input type="text" name="Ninckname" placeholder="Ingrese su nombre de usuario" id="nickname" >
+                        <label>Nombre</label><br><br><input type="text" name="nameUser" placeholder="Ingrese su nombre de usuario" id="nickname" >
                     </div>
                     <div id="full_name">
-                        <label>Nombre completo</label><br><br><input type="text" name="Fullname" placeholder="Ingrese su nombre completo" id="fullname" >
+                        <label>Apellido</label><br><br><input type="text" name="lastName" placeholder="Ingrese su nombre completo" id="fullname" >
                     </div>
                     <div id="phone_number">
                         <label>Número de celular</label><br><br><input type="tel" name="phonenumber" placeholder="Ingrese su número telefónico" id="phonenumber">
@@ -72,10 +79,10 @@
 
             </div>
 
-                    <input type="submit" id="send"><br><br>
+                    <input type="submit" id="send" name="save"><br><br>
 
         </div>
-
+      </form>
         <div class="info_container"> <!--Contenedor de la información-->
 
                 <h1>Más información</h1><br>

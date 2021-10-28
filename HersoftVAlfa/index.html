@@ -34,9 +34,9 @@
           <i class="fi-sr-shopping-cart"></i>
           <i class="fi-sr-cross-circle cross_car"></i>
         </button>
-        <button class="shortcut_btn">
-          <i class="fi-sr-user"></i>
-          <i class="fi-sr-cross-circle cross_user"></i>
+        <button class="shortcut_btn" onclick="openCloseMenuUser();">
+          <i class="fi-sr-user" id="menu_user"></i>
+          <i class="fi-sr-cross-circle cross_user" id="cross_user"></i>
         </button>
         <button class="shortcut_btn" onclick="openCloseMenu()">
           <i class="fi-sr-menu-burger menu_burger" id="menu_burger"></i>
@@ -54,6 +54,13 @@
           <a href="./login.php" class="login_up_btn"><li>Iniciar Sesión</li></a>
         </ul>
 
+      </nav>
+      <nav id="user_menu">
+        <div id="login">
+          <div></div>
+          <a href="users.php"><li>Hernan Torres</li></a>
+          <a href="./src/PHP/cerrar_sesion.php"><li>Cerrar Sesión</li></a>
+        </div>
       </nav>
     </header>
     <div class="banner">
