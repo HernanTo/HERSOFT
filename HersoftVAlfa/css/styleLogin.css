@@ -132,7 +132,7 @@ a{
     }
 }
 /* logo */
-.logo{
+.logo, .logo_loaded{
     /* background: red; */
     display: flex;
     margin-top: 20px;
@@ -166,4 +166,25 @@ a{
     height: 20px;
     border: 2.2px solid #00FFF5;
     border-radius: 50%;
+}
+.loaded{
+    /* background: black; */
+    position: absolute;
+    width: 4%;
+    left: 48%;
+    top:50vh;
+}
+.loaded .logo_loaded{
+    margin-left: 0vw;
+}
+.loaded .logo_loaded{
+    animation: girar 0.6s infinite;
+}
+@keyframes girar{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
 }

@@ -16,17 +16,17 @@
     <?php include("./src/incluedes/menu_slide.php"); ?>
     <div class="containerSeo">
         <h2>Agregar SEO</h2>
-        <div class="agregar_user">
+        <div class="agregar_user" style="background: #121212;">
             <form action="./src/PHP/administrar_persona.php" method="POST">
-                <input type="int" name="idregistrerseo" id="id_registrer_seo" placeholder="Ingresa tu numero de identificacion"><br>
-                <input type="text" name="nameregistrerseo" id="name_registrer_seo" placeholder="Ingresa tu nombre"><br>
-                <input type="text" name="lastregistrerseo" id="last_registrer_seo" placeholder="Ingresa tus apellidos"><br>
-                <input type="text" name="emailregistrerseo" id="email_registrer_seo" placeholder="Ingresa tu email"><br>
-                <input type="password" name="passwordregistrerseo" id="password_registrer_seo" placeholder="password"><br>
-                <input type="text" name="adreessregistrerseo" id="adreess_registrer_seo" placeholder="Ingresa tu direccion"><br>
-                <input type="int" name="ageregistrerseo" id="age_registrer_seo" placeholder="Ingresa tu edad"><br>
+                <input type="int" name="idregistrerseo" id="id_registrer_seo" placeholder="Ingresa tu numero de identificacion" style="color: white;"><br>
+                <input type="text" name="nameregistrerseo" id="name_registrer_seo" placeholder="Ingresa tu nombre" style="color: white;"><br>
+                <input type="text" name="lastregistrerseo" id="last_registrer_seo" placeholder="Ingresa tus apellidos" style="color: white;"><br>
+                <input type="text" name="emailregistrerseo" id="email_registrer_seo" placeholder="Ingresa tu email" style="color: white;"><br>
+                <input type="password" name="passwordregistrerseo" id="password_registrer_seo" placeholder="password" style="color: white;"><br>
+                <input type="text" name="adreessregistrerseo" id="adreess_registrer_seo" placeholder="Ingresa tu direccion" style="color: white;"><br>
+                <input type="int" name="ageregistrerseo" id="age_registrer_seo" placeholder="Ingresa tu edad" style="color: white;"><br>
 
-                <input type="submit" value="Agregar" name="insertar">
+                <input type="submit" value="Agregar" name="insertar" id="insertar_seo" style="background: rgba(17, 32, 49, 0.8); color: white; font-family: 'Monospace'; width: 35%; margin-left: 35%; border-bottom:none;">
             </form>
         </div>
     </div>

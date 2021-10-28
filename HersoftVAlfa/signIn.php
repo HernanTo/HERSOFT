@@ -76,15 +76,33 @@
                 <label>Ingresa tu edad</label><br><input type="number" name="age_sign" id=""><br>
                 <label>Ingresa tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
                 <label>Repite tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
-                <label>Selecciona el tipo de cuenta</label>
+                <!-- <label>Selecciona el tipo de cuenta</label>
                 <select name="select_user" id="select_user">
                     <option value="admin">Administrador</option>
                     <option value="user">Usuario</option>
-                </select>
-                <input type="submit" value="Registrarse" name = "save_register" id="sign_btn">
+                </select> -->
+                <input type="button" value="Continuar" onclick="mostrarType()">
+                <div id="typeAccount">
+                    <div class="seleccion">
+                        <div class="admin">
+                            <img src="./assets/img/icons_png/admin.png" alt="">
+                            <div class="descri">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dignissimos.
+                            </div>
+                        </div>
+                        <div class="user">
+                            <img src="./assets/img/icons_png/usuario.png" alt="">
+                            <div class="descri">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo illum perferendis quae cumque 
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Registrarse" name = "save_register" id="sign_btn" style="color: white;">
+                </div>
             </form>
         </div>
     </div>
     <script src="./src/JS/main.js"></script>
+    <script src="./src/JS/signIn.js"></script>
 </body>
 </html>

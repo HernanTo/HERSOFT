@@ -66,15 +66,24 @@
             <br><br>
             <a href="#">Olvidaste tu contraseña?</a><br>
             <div id="container_end_login">
-                <a href="">Crear Cuenta</a><br>
+                <a href="signIn.php">Crear Cuenta</a><br>
                 <button type="submit" name="btn_login">Iniciar Sesión</button>
             </div>
             <br><br><br>
         </form>
     </div>
-    <!-- <div class="container_loaged">
-        Cargando...
-    </div> -->
+    <div class="loaded">
+    <div class="logo_loaded">
+    <div class="circle_white">
+        <div class="circle_white_on">
+        </div>
+    </div>
+    <div class="circle_blue">
+        <div class="circle_blue_on">
+    
+        </div>
+    </div>
+    </div>
     <script src="./src/JS/main.js"></script>
 </body>
 </html>

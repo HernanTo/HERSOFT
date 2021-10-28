@@ -14,7 +14,7 @@ $persona = new Persona();
         $age_seo = ($_POST['ageregistrerseo']);
         $last_seo = ($_POST['lastregistrerseo']);
         $password_seo = ($_POST['passwordregistrerseo']);
-        $dml = "INSERT INTO users VALUES ($id_seo,$name_seo,$last_seo,$password_seo,$email_seo,$address_seo,$age_seo,'seo')";
+        $dml = "INSERT INTO users VALUES ('$id_seo','$name_seo','$last_seo','$password_seo','$email_seo','$address_seo','$age_seo','seo')";
         $query_sql = mysqli_query($conection,$dml);
 		header('Location: ../../queryUser.php');
 	}elseif(isset($_POST['actualizar'])){
