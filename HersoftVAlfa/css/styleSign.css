@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(83deg, #121212 0%, #da1c45 35%, #00FFF5 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);;
 }
 header{
     background: none;
@@ -17,7 +17,6 @@ header i{
     color: black;
     font-family: 'Modern Sans';
     border-radius: 10px;
-    margin-bottom: 20vh;
 }
 .container_sign_in h2{
     text-align: center;
@@ -77,77 +76,4 @@ form #sign_btn{
         margin-left: 32.5%;
         width: 35vw;
     }
-}
-/* logo */
-.logo{
-    /* background: red; */
-    display: flex;
-    margin-top: 20px;
-    margin-left: 5vw;
-}
-.circle_white, .circle_blue{
-    width: 32px;
-    height: 33px;
-    border-radius: 50%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-.circle_blue{
-    border: 2.2px solid #00FFF5;
-    position: absolute;
-    margin-left: 4px;
-}
-.circle_white_on{
-    width: 21px;
-    height: 23px;
-    border: 2.2px solid white;
-    border-radius: 50%;
-}
-.circle_white{
-    border: 2.2px solid white;
-}
-.circle_blue_on{
-    width: 20px;
-    height: 20px;
-    border: 2.2px solid #00FFF5;
-    border-radius: 50%;
-}
-#typeAccount{
-    background: #151515;
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    border-radius: 10px;
-    top: 30vh;
-    transform: translateY(-290%);
-    transition: 1s;
-}
-.seleccion{
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2,35%);
-    gap: 10%;
-    margin-top: 5%;
-    color: white;
-}
-.seleccion .admin img , .seleccion .user img {
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.admin, .user{
-    background: rgba(17, 32, 49, 0.8);
-    border-radius: 10px;
-    transition: 0.4s;
-    cursor: pointer;
-}.descri{
-    padding: 0px 25px;
-    text-align: justify;
-    margin-bottom: 30px;
-}
-.admin:hover, .user:hover{
-    transform: scale(1.05);
 }

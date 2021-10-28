@@ -13,20 +13,11 @@
     <link rel="shortcut icon" href="./assets/img/Logo.gif" type="image/x-icon">
     <link rel="stylesheet" href="./assets/font/icons/css/uicons-solid-rounded.css">
 </head>
-
 <body>
     <header>
-    <div class="logo">
- <div class="circle_white">
-     <div class="circle_white_on">
-     </div>
- </div>
- <div class="circle_blue">
-     <div class="circle_blue_on">
- 
-     </div>
- </div>
- </div>
+        <div class="logo">
+            <a href="index.html"><img src="assets/img/Logo.gif" alt="logo Creactly"></a>
+        </div>
         <!-- <h1 class="logo-text">Crea<span>ctly</span></h1> -->
         <div class="shortcuts">
             <button class="shortcut_btn">
@@ -71,38 +62,20 @@
                 <label>Ingresa tus nombres</label><br><input type="text" name="name_sign" id="name_sign" autocomplete="non"><br>
                 <label>Ingresa tus apellidos</label><br><input type="text" name="last_name_sign" id="last_name_sign"><br>
                 <label>Ingresa tu número de identificación</label><br><input type="number" name="id_user_sign" id="id_user_sign"><br>
-                <label>Ingresa tu Correo</label><br><input type="email" name="email_sign" id="email"><br>
+                <label>Ingresa tu Correo</label><br><input type="text" name="email_sign" id="email"><br>
                 <label>Ingresa tu dirección</label><br><input type="text" name="address_sign" id=""><br>
                 <label>Ingresa tu edad</label><br><input type="number" name="age_sign" id=""><br>
                 <label>Ingresa tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
                 <label>Repite tu contraseña</label><br><input type="password" name="password_sign" id="password_sign"><br>
-                <!-- <label>Selecciona el tipo de cuenta</label>
+                <label>Selecciona el tipo de cuenta</label>
                 <select name="select_user" id="select_user">
                     <option value="admin">Administrador</option>
                     <option value="user">Usuario</option>
-                </select> -->
-                <input type="button" value="Continuar" onclick="mostrarType()">
-                <div id="typeAccount">
-                    <div class="seleccion">
-                        <div class="admin">
-                            <img src="./assets/img/icons_png/admin.png" alt="">
-                            <div class="descri">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, dignissimos.
-                            </div>
-                        </div>
-                        <div class="user">
-                            <img src="./assets/img/icons_png/usuario.png" alt="">
-                            <div class="descri">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo illum perferendis quae cumque 
-                            </div>
-                        </div>
-                    </div>
-                    <input type="submit" value="Registrarse" name = "save_register" id="sign_btn" style="color: white;">
-                </div>
+                </select>
+                <input type="submit" value="Registrarse" name = "save_register" id="sign_btn">
             </form>
         </div>
     </div>
     <script src="./src/JS/main.js"></script>
-    <script src="./src/JS/signIn.js"></script>
 </body>
 </html>
